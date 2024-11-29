@@ -1,0 +1,39 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "Meowl Starter Wheel",
+        "status": "Open to play",
+        "description": "Spin the wheel with just 1 USDT and get a chance to win Starter prizes!",
+        "ticker": "MEOWL",
+        "open_toplay": false,
+        "image1": "/Meowl_starterback.svg",
+        "image2": "/Meowl_strarterlogo.svg"
+        
+      },
+      {
+        "id": 2,
+        "name": "Meowl Intermediate Wheel",
+        "status": "Play Soon",
+        "description": "Spin the wheel with 5 USDC and get a chance to win big prizes!",
+        "ticker": "MEOWL",
+        "open_toplay": false,
+        "image1": "/Meowl_Intermback.svg",
+        "image2": "/meowlInterLogo.svg"
+        
+      },
+      {
+        "id": 3,
+        "name": "Meowl Intermediate Wheel",
+        "status": "Play Soon",
+        "description": "Spin the wheel with 5 USDC and get a chance to win big prizes!",
+        "ticker": "MEOWL",
+        "open_toplay": false,
+        "image1": "/Meowl_PremiumBack.svg",
+        "image2": "/Meowl_premiumLogo.svg"
+        
+      }
+     
+    ]
+  }
+  

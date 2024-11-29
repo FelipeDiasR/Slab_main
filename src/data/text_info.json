@@ -1,0 +1,31 @@
+{
+    "meowlWheelRules": {
+    "title": "MeowlWheel Game Rules",
+    "content": "<h3>Welcome to MeowlWheel!</h3><br><h3>Here's how to play:</h3><br><br><h4>Betting</h4><br><br>To participate, players have the opportunity to place bets in USDC on our platform. Once Meowl tokens are on the market, players will also be able to bet Meowl tokens for a chance to win prizes.<br><br><h4>Spinning the Wheel</h4><br><br>Once the bet is placed, the wheel will spin randomly, and players have a chance to win one of the following prizes:<br><br><h2>- Meowl Starter Wheel</h2> <h5>Bet Amount: $1</h5><br> <h5>Prizes:</h5><br>    - $15: The player wins $15 USDC.<br>    - Free Spin: The wheel spins again for free.<br>    - $1: The player breaks even, neither winning nor losing.<br>    - $5: The player wins $5 USDC.<br>    - Try Again: The player loses the bet.<br>    - 1 Million Meowl Tokens: The player wins 1 million Meowl tokens.<br>    - $3: The player wins $3 USDC.<br>    - $0.50: The player loses $0.50 USDC.<br>    - 500k Meowl Tokens: The player wins 500k Meowl tokens.<br><br> <h2>- Meowl Intermediate Wheel</h2><br>  <h5> Bet Amount:$5 </h5><br>  - Prizes:<br>    - $1: The player loses $4 USDC.<br>    - $10: The player doubles their bet, winning $10 USDC.<br>    - Try Again: The player loses the bet.<br>    - 5 Million Meowl Tokens: The player wins 5 million Meowl tokens.<br>    - $20: The player wins $20 USDC.<br>    - Free Spin: The wheel spins again for free.<br>    - $2.50: The player loses $2.50 USDC.<br>    - 2.5 Million Meowl Tokens: The player wins 2.5 million Meowl tokens.<br>    - $15: The player wins $15 USDC.<br><br><h2>- Meowl Premium Wheel<br></h2>  <h5> Bet Amount:$10 </h5><br>  <h5>Prizes:</h5><br>    - $5: The player loses $5 USDC.<br>    - $30: The player wins $30 USDC.<br>    - Try Again: The player loses the bet.<br>    - 20 Million Meowl Tokens: The player wins 20 million Meowl tokens.<br>    - $7: The player loses $3 USDC.<br>    - Free Spin: The wheel spins again for free.<br>    - $15: The player wins $15 USDC.<br>    - 500k Meowl Tokens: The player wins 500k Meowl tokens.<br>    - $20: The player wins $20 USDC.<br><br><h1>Winning and Losing</h1><br>The outcome is determined randomly by the wheel, and the player will either win, lose, or break even based on where the wheel stops.<br><br><h1>Repeat Play</h1><br>Players can continue to play and bet as many times as they like, aiming to win the top prizes!"
+    },
+    "houseEdge": {
+      "title": "House Edge",
+      "content": "This is the information about House Edge."
+    },
+    "meowlPot": {
+      "title": "Meowl Pot",
+      "content": "This is the information about Meowl Pot."
+    }
+    ,
+    "meowlEarlier": {
+      "title": "EarlierMeowl",
+      "content": "EarlierMeowl is an exclusive pool available only to investors who hold rights from MeowlVerse NFTs or to those who have staked Meowl tokens. This pool offers early access to select investment opportunities, providing unique advantages to our most engaged investors. <br/> <br/>Currently, access via staked tokens will be available once the staking system is live and the Meowl token is on the market. With EarlierMeowl, we reward the loyalty and commitment of our community, offering a privileged space to participate in high-potential project launches on MeowlPad."
+    },
+    "openMeowl": {
+      "title": "OpenMeowl",
+      "content": "OpenMeowl is an inclusive pool accessible to all users, regardless of NFT holdings or staked tokens. This pool provides open access to a variety of investment opportunities on the MeowlPad platform. <br/> <br/>With OpenMeowl, everyone has the chance to participate in exciting new projects and benefit from early-stage investment options, fostering a more inclusive environment for all members of the MeowlVerse community."
+    },
+    "Claimsection": {
+      "title": "Claim Section Overview",
+      "content": "What is TGE (Token Generation Event)?<br/>The Token Generation Event (TGE) is a key milestone in the lifecycle of a cryptocurrency project, marking the official issuance of tokens to investors and participants. It is the moment when the tokens are created and distributed, making them available for use and trading. <br/> <br/>TGE Amount<br/>The TGE Amount refers to the total quantity of tokens that will be distributed to participants at the time of the TGE. This is the initial allocation of tokens provided to those who have invested or participated in the project before or during the TGE. <br/> <br/>Vesting<br/> Vesting is a process that controls how and when tokens are distributed to recipients over a set period. Instead of receiving all tokens at once, recipients receive their allocation in increments, according to a pre-defined schedule. This approach helps ensure long-term commitment and prevents large-scale sell-offs immediately after the TGE.<br/><br/> Claiming Vesting<br/>Claiming vesting refers to the process by which recipients can access their allocated tokens as they become available according to the vesting schedule. Participants will be able to claim their tokens in specified portions over the vesting period.<br/> <br/>Amount for Claim <br/> The Amount for Claim indicates the quantity of tokens that can be claimed during each vesting period. It represents the portion of the total vesting allocation that is available for withdrawal at each specific interval.<br/> <br/> Total Number of Claims<br/>The Total Number of Claims represents the total number of vesting periods or installments in which the tokens are distributed. It reflects how many times participants can claim their allocated tokens throughout the vesting schedule."
+    }
+  }
+  
+ 
+
+

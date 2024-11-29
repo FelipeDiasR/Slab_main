@@ -1,0 +1,28 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "MeowlWheel",
+        "status": "Play Soon",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "ticker": "MEOWL",
+        "open_toplay": false,
+        "image1": "/meowlrouletback.svg",
+        "image2": "/meowlwheel.svg"
+        
+      },
+      {
+        "id": 2,
+        "name": "MeowlPoker",
+        "status": "Play Soon",
+        "description": "Join our poker tables and show your skills! Bet, bluff, and win big on the MeowlGaming platform.",
+        "ticker": "MEOWL",
+        "open_toplay": false,
+        "image1": "/pokerback.svg",
+        "image2": "/pokerrLogo.svg"
+        
+      }
+     
+    ]
+  }
+  

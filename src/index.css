@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --font-family: 'Inter', sans-serif;
+
+  --gradient-text: -webkit-linear-gradient(right, #45801789 70%, #458017c6 100% );
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #ffffff;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
+.lightmode {
+  --gradient-text: -webkit-linear-gradient(right, #6E56CF 60%, #53025F 100%);
+ 
+}
+button:hover {
+  transform: scale(0.95);
+  transition: all 0.2s;
+} 
+button:hover {
+  
+  color:rgb(62, 57, 57);
+}

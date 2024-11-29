@@ -1,0 +1,67 @@
+.meow__partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+    font-family: var(--font-family);
+    width: 100%;
+    padding: 2rem 0;
+    background: #DDDEE2; 
+    margin-top: 5rem;
+  }
+
+  .light-mode .meow__partners{
+    background-color: transparent;
+  }
+  
+  .meow__partners h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .meow__partners_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0rem;
+    margin-bottom: 6rem;
+  }
+  
+  .meow__partner_image {
+    flex: 1 0 150px; /* Tamanho dos parceiros em telas menores */
+  }
+  
+  .meow__partner_image img {
+    width: 65%;
+    height: auto;
+  }
+  
+  /* Media Queries para telas menores que 500px */
+  @media screen and (max-width: 500px) {
+    .meow__partners {
+      padding: 1rem;
+    }
+  
+    .meow__partners h2 {
+      margin-top: 1rem;
+    }
+  
+    .meow__partners_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .meow__partner_image {
+      width: 100%; /* Faz os parceiros ocuparem toda a largura */
+      max-width: 150px; /* Define a largura máxima dos parceiros */
+      margin-bottom: 1rem;
+    }
+    
+    /* Ajuste de margem inferior para todos os elementos */
+    .meow__partners_container > * {
+      margin-bottom: 1rem;
+    }
+  }
+  

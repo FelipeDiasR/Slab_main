@@ -1,0 +1,61 @@
+/* launchpadLanding.css */
+.meowl_launchpad {
+    background: transparent;
+    color: #000000;
+  }
+
+  .light-mode .meowl_launchpad {
+    background: #E7E4EF;
+  }
+  
+  .meowl_launchpad_upcoming_cards {
+    display: flex;
+    flex-wrap: wrap; 
+    /* Permite que os cards quebrem linha se necessário */
+ /* Espalha os cards uniformemente */
+     /* Espaçamento entre os cards */
+  }
+  
+  .meowl_launchpad_upcoming_cards > * {
+    flex: 0.322 1; /* Cada card ocupará ao menos 300px de largura, e poderá expandir */
+    margin: 0; /* Define uma largura máxima para os cards */
+  }
+
+
+  .meowl-completed_titles{
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+  .meowl-completed_titles h1 {
+    margin-bottom: 1rem;
+  }
+  .conditinal_paragrath p{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+     font-weight: bold;
+  }
+
+  .light-mode .conditinal_paragrath,
+  .light-mode .meowl-completed_titles h1,
+  .light-mode .meowl-completed_titles p{
+    color: black;
+  }
+
+  @media screen and (max-width: 500px) {
+    .meowl-completed_titles{
+      margin-top: 2rem;
+      margin-left: 2rem;
+      
+    }
+
+    .conditinal_paragrath p{
+      margin-left: 2rem;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+       font-weight: bold;
+    }
+
+  }
+  

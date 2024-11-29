@@ -1,0 +1,265 @@
+.meow__header {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: var(--font-family);
+  width: 100%;
+
+}
+
+
+.meow_header_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  margin-left: 7rem;
+}
+
+.meow__header_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meow__header_content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 75px;
+  letter-spacing: 0.02em;
+}
+
+
+.meow__header_content p {
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.light-mode .meow__header {
+  background: #E7E4EF; /* Fundo claro para o modo claro */
+  color: #000; /* Texto preto para o modo claro */
+}
+
+.light-mode .meow__header_content p {
+  color: #000; /* Texto preto no parágrafo para o modo claro */
+}
+.meow__header_buttons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.meow__header_buttons-button1 button,
+.meow__header_buttons-button2 button {
+  font-family: var(--font-family);
+  width: 250px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+.meow__header_buttons-button1 button {
+  background-color: #458017c6;
+}
+
+.meow__header_buttons-button2 button {
+  background-color: #2f2b67;
+}
+
+.meow__header-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.meow__header-img img {
+  width: 100%;
+  height: auto;
+}
+.meow__header.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.meow__header.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/*------------------1025px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+@media screen and (max-width: 1025px) {
+
+  .meow__header_content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    width: 600px;
+  }
+
+  .meow__header_content p {
+    font-size: 1rem;
+    line-height: 1.4em;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 700px;
+  }
+  .meow__header-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 7rem;
+    margin-bottom: 8rem;
+  }
+  
+  .meow__header-img img {
+    width: 155%;
+    height: auto;
+  }
+
+}
+
+
+/*------------------800px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+@media screen and (max-width: 850px) {
+  .meow_header_container {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .meow__header_buttons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+  }
+  
+  .meow__header_buttons-button1 button,
+  .meow__header_buttons-button2 button {
+    font-family: var(--font-family);
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 8px;
+  }
+
+  .meow__header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 1rem;
+  }
+  
+  .meow__header-img img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/*------------------500px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+@media screen and (max-width: 500px) {
+  .meow_header_container {
+    flex-direction: column;
+    margin-left: 12rem;
+  }
+
+  .meow__header_content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    
+  }
+  .meow__header_content p {
+    font-size: 0.95rem;
+    line-height: 1.7em;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 250px;
+  }
+
+
+
+  .meow__header_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0rem;
+  }
+  
+  .meow__header_buttons-button1 button,
+  .meow__header_buttons-button2 button {
+    font-family: var(--font-family);
+    width: 225px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 8px;
+  }
+
+  .meow__header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 1rem;
+  }
+  
+  .meow__header-img img {
+    position: relative;
+    right: 8.5rem;
+    width: 120%;
+    height: auto;
+  }
+}
+
+
+

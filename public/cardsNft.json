@@ -1,0 +1,96 @@
+{
+    "nfts": [
+      {
+        "id": 1,
+        "name": "Meowl Reaper Lumberjack",
+        "weight": "Weight #19",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/1.svg"
+        
+        
+      },
+      {
+        "id": 2,
+        "name": "Meowl Reaper Arrow",
+        "weight": "Weight #15",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/2.svg"
+      },
+      {
+        "id": 3,
+        "name": "Meowl Reaper Executive",
+        "weight": "Weight #17",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/4.svg"
+      },
+      {
+        "id": 4,
+        "name": "Meowl Reaper Alien",
+        "weight": "Weight #13",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/5.svg"
+      },
+      {
+        "id": 5,
+        "name": "Meowl Shooter Sniper",
+        "weight": "Weight #6",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9285.svg"
+      },
+      {
+        "id": 6,
+        "name": "Meowl Shooter Army",
+        "weight": "Weight #8",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9232.svg"
+        
+        
+      },
+      {
+        "id": 7,
+        "name": "Meowl Shooter Pistol",
+        "weight": "Weight #17",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9269.svg"
+      },
+      {
+        "id": 8,
+        "name": "Meowl Shooter Hunter",
+        "weight": "Weight #3",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9276.svg"
+      },
+      
+      {
+        "id": 10,
+        "name": "Meowl King Black",
+        "weight": "Weight #3",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9809.svg"
+    },
+    {
+      "id": 11,
+      "name": "Meowl Black Kindon",
+      "weight": "Weight #1",
+      "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+      "backgroubdImage": "/nfts/9810.svg"
+    },
+    {
+      "id": 12,
+      "name": "Meowl King Alien",
+      "weight": "Weight #3",
+      "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+      "backgroubdImage": "/nfts/9850.svg"
+    },
+    {
+      "id": 13,
+      "name": "Meowl King trident",
+      "weight": "Weight #8",
+      "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+      "backgroubdImage": "/nfts/9803.svg"
+    }
+
+
+     
+    ]
+  }

@@ -1,0 +1,283 @@
+/* Estilos base (modo escuro) */
+.meow__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    font-family: var(--font-family);
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+    
+}
+
+.meow__navbar_logo {
+    flex: 1;
+}
+
+.meow__navbar_logo img {
+    width: 250px;
+}
+
+.meow__navbar_lightmode {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.meow__navbar_whitepaper_wallet button{
+    font-family: var(--font-family);
+    width: 140px;
+    height: 33px;
+    background-color: #458017c6;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    margin-right: 1rem;
+    font-weight: bold;
+
+}
+
+.meow__navbar_lightmode button,
+.meow__navbar_launchpad button { /* Adicionei o botão Launchpad */
+    font-family: var(--font-family);
+    width: 163px;
+    height: 33px;
+    background-color: #458017c6;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15px;
+}
+
+.meow__navbar_whitepaper_wallet {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #000000;
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+}
+
+.meow__navbar_whitepaper_wallet a {
+    margin-right: 1.5rem;
+}
+
+
+
+/* Estilos para o menu responsivo */
+.meow__navbar-menu {
+   
+    display: none;
+}
+
+.meow__navbar-menu svg {
+    cursor: pointer;
+}
+
+.meow__navbar-menu_container {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding: 2rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #e0d9e8; /* Cor de fundo sólida */
+}
+
+.meow__navbar-menu a,
+.meow__navbar-menu .link {
+    margin-bottom: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.meow__navbar-menu a:hover,
+.meow__navbar-menu .link:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.meow__navbar_lightmode {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Estilos para o modo claro */
+.light-mode {
+    background: #E7E4EF !important;
+    color: #000 !important;
+}
+
+.light-mode .meow__navbar_logo img {
+    filter: brightness(0);
+}
+
+.light-mode .meow__navbar_whitepaper_wallet a {
+    color: #000 !important;
+
+}
+.light-mode .meow__navbar_lightmode button,
+.light-mode .meow__navbar_whitepaper_wallet button {
+    background-color: #27064F !important;
+    color: #ffffff !important;
+} 
+
+.light-mode .meow__navbar-menu_container {
+    color: #000 !important;
+}
+
+/* Estilos para telas menores que 800px */
+@media screen and (max-width: 800px) {
+    .meow__navbar_logo img {
+        width: 250px;
+    }
+
+    .meow__navbar-menu button.color-mode-toggle {
+        font-family: var(--font-family);
+        width: 100px; /* Ajuste a largura conforme necessário */
+        height: 33px;
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        text-align: left; /* Adiciona alinhamento do texto */
+        
+    }
+    
+    /* Estilo para o modo claro */
+    .light-mode .meow__navbar-menu button.color-mode-toggle {
+        background-color: #27064F !important;
+        color: #ffffff !important;
+    }
+
+    .meow__navbar_preesale {
+        display: none;
+    }
+
+    .meow__navbar_lightmode button {
+        display: none;
+    }
+
+    .meow__navbar_whitepaper_wallet a {
+        display: none;
+    }
+
+    .meow__navbar_whitepaper_wallet {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .meow__navbar_whitepaper_wallet button {
+        margin-right: 11.9rem;
+    }
+
+    .meow__navbar-menu {
+        display: flex;
+        margin-right: 2rem;
+    }
+}
+
+/* Estilos para telas menores que 500px */
+@media screen and (max-width: 500px) {
+    .meow__navbar {
+        margin-top: 0;
+        margin-left: -1rem;
+        margin-bottom: 0rem;
+    }
+
+    .meow__navbar_logo img {
+        margin-right: 0rem;
+        width: 180px;
+    }
+
+    .meow__navbar_whitepaper_wallet button {
+        width: 123px;
+        margin-right: 1rem;
+    }
+
+    .meow__navbar_whitepaper_wallet {
+        justify-content: center;
+        margin-top: 0.1rem;
+    }
+
+    .meow__navbar-menu {
+        display: flex;
+        margin-left: 3rem;
+        margin-right: 2rem;
+    }
+}
+
+/* Estilos para telas menores que 380px */
+@media screen and (max-width: 380px) {
+    .meow__navbar {
+        margin-top: 0;
+        margin-left: -1rem;
+        margin-bottom: 0rem;
+    }
+
+    .meow__navbar_logo img {
+        margin-right: 0rem;
+        width: 180px;
+    }
+
+    .meow__navbar_whitepaper_wallet button {
+        width: 123px;
+        margin-right: 0.2rem;
+    }
+
+    .meow__navbar_whitepaper_wallet {
+        justify-content: center;
+        margin-top: 0.1rem;
+    }
+
+    .meow__navbar-menu {
+        display: flex;
+        margin-left: 3rem;
+        margin-right: 2rem;
+    }
+}
+
+/* Estilos para telas menores que 325px */
+@media screen and (max-width: 325px) {
+    .meow__navbar {
+        margin-top: 0;
+        margin-left: -2.2rem;
+        margin-bottom: 0rem;
+    }
+
+    .meow__navbar_logo img {
+        margin-left: 2rem;
+        width: 100px;
+
+    }
+
+    .meow__navbar_whitepaper_wallet button {
+        width: 123px;
+        margin-right: -1rem;
+    }
+
+    .meow__navbar_whitepaper_wallet {
+        justify-content: center;
+        margin-top: 0.1rem;
+    }
+
+    .meow__navbar-menu {
+        display: flex;
+        margin-left: 3rem;
+        margin-right: 2rem;
+    }
+}

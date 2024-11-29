@@ -1,0 +1,196 @@
+.meow__brand {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-family: var(--font-family);
+    width: 100%;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .light-mode .meow__brand {
+    background: #E7E4EF; /* Fundo claro para o modo claro */
+    color: #3D004F; /* Texto preto para o modo claro */
+  }
+  
+  .light-mode .meow__brand_lauchpad p,
+  .light-mode .meow__brand_content_gaming p
+   {
+    
+    color: #000000; /* Texto preto para o modo claro */
+  }
+  .meow__brand_container {
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .meow__brand_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .meow__brand_title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .meow__brand_content_launch,
+  .meow__brand_content_gaming {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .meow__header_img_foguete {
+    margin-right: 2rem; /* Espaço entre a imagem e o texto */
+  }
+
+  
+  .meow__header_img_gaming {
+    margin-right: 2rem; /* Espaço entre a imagem e o texto */
+    margin-top: 2rem;
+}
+  
+  .meow__header_img_foguete img {
+    width: 350px;
+    height: auto;
+    margin-right: 5rem;
+  }
+
+  
+  .meow__header_img_gaming img {
+    width: 280px;
+    height: auto;
+    margin-left: 8rem;
+  }
+  
+  .meow__brand_lauchpad,
+  .meow__brand_gaming {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+  
+  .meow__brand h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .meow__brand p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+
+/*------------------800px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+  @media screen and (max-width: 800px) {
+    .meow__brand_lauchpad,
+    .meow__brand_gaming {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+    }
+
+    .meow__brand_container {
+        width: 80%;
+        max-width: 1200px;
+        margin-right: 0rem;
+      }
+
+    .meow__brand h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+       
+      }
+
+      .meow__brand p {
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 300;
+        width: 300px;
+      }
+
+      .meow__header_img_foguete {
+        margin-right: 4rem; /* Espaço entre a imagem e o texto */
+      }
+    
+      
+      .meow__header_img_gaming {
+        margin-left: 3rem; /* Espaço entre a imagem e o texto */
+        margin-top: 2rem;
+    }
+      
+      .meow__header_img_foguete img {
+        width: 230px;
+        height: auto;
+        margin-right: 0.4rem;
+      }
+    
+      
+      .meow__header_img_gaming img {
+        width: 210px;
+        height: auto;
+        margin-left: 1rem;
+      }
+  }
+
+  /*------------------500px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+@media screen and (max-width: 500px) {
+    .meow__brand_content_launch,
+    .meow__brand_content_gaming {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: center;
+    }
+  
+    .meow__header_img_foguete,
+    .meow__header_img_gaming {
+      order: 2; /* Garante que a imagem fique depois do texto */
+      margin: 1rem 0 0 0; /* Ajusta margens conforme necessário */
+    }
+  
+    .meow__brand_lauchpad,
+    .meow__brand_gaming {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  
+    .meow__brand h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .meow__brand p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      font-weight: 300;
+      width: 100%;
+    }
+  
+    .meow__header_img_foguete img,
+    .meow__header_img_gaming img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }

@@ -1,0 +1,198 @@
+.meow_nftselling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.meow_nftselling_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem; /* Espaço aumentado entre o card e o conteúdo */
+}
+
+.meowl_nftselling_card {
+  background: #184e6eab;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem; /* Espaço maior entre o card e o conteúdo */
+}
+
+.meow_nftselling_content {
+  flex: 1;
+  text-align: left;
+}
+
+.meow_nftselling_content h1 {
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+.meow_nftselling_content p {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 4rem;
+  line-height: 1.5;
+}
+.light-mode .meow_nftselling_content h1,
+.light-mode .meow_nftselling_content p {
+  color: black;
+}
+.meow_nftselling_buttons {
+  margin-top: 2rem;
+}
+
+.meow_nftselling_buttons_button1 button {
+  padding: 10px 20px;
+  background-color: #428eae;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.meow_nftselling_buttons_button2 button {
+  padding: 10px 20px;
+  background-color: #428eae;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.meow_nftselling_buttons_button1 button:hover {
+  background-color: #b94bcc;
+}
+
+.meowl_nftselling_card_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image_nft {
+  width: 100%;
+  height: auto;
+}
+
+.meowl_nftselling_card_text {
+  margin-top: 10px; /* Espaço entre a imagem e o texto */
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+  align-self: flex-start; /* Alinha o texto mais à esquerda */
+  width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+  padding-left: 15px; /* Adiciona espaço à esquerda */
+}
+
+.meowl_nftselling_card_text h4 {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+ 
+  .meow_nftselling_content p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 4rem;
+    line-height: 1.5;
+  }
+
+  .meow_nftselling_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem; /* Espaço aumentado entre o card e o conteúdo */
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .meow_nftselling_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 25rem;
+    
+  }
+ 
+  .meow_nftselling_content p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 4rem;
+    line-height: 1.5;
+  }
+
+  .meowl_nftselling_card_container {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+ 
+
+}
+
+
+@media screen and (max-width: 330px) {
+
+  .meow_nftselling_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 25rem;
+    
+  }
+ 
+  .meow_nftselling_content h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .meow_nftselling_content p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 4rem;
+    line-height: 1.5;
+  }
+
+  .meowl_nftselling_card_container {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+ 
+
+}
+
+
+
+

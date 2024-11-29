@@ -1,0 +1,271 @@
+.meowl_HeaderProject {
+display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: var(--font-family);
+  width: 100%;
+ 
+
+}
+
+.meowl_HeaderProject_container {
+display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 3rem;
+
+}
+
+.meowl_HeaderProject_alert_container{
+    width: 400px;
+    height: 80px;
+    background-color: #39a0b7d6;
+    border-radius: 8px;
+ 
+}
+.meowl_HeaderProject_close {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 23rem;
+     /* Ajuste o valor negativo para mover o ícone mais para a esquerda */
+}
+.meowl_HeaderProject_icon_close{
+    width: 5rem;
+    height: 1.3rem;
+}
+
+
+.meowl_HeaderProject_i{
+    display: flex;
+}
+
+
+.meowl_HeaderProject_alert_icon {
+    color: #E7E4EF;
+    width: 2.5rem;
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+}
+
+.meowl_HeaderProject_alert_title {
+    font-size: 0.8rem;
+    width: 482px;
+    height: 21px;
+}
+
+.meowl_HeaderProject_message {
+    font-size: 0.9rem;
+    margin-left: 2.9rem;
+}
+
+.light-mode .meowl_HeaderProjectmeowl_HeaderProject {
+    background: #E7E4EF; /* Fundo claro para o modo claro */
+    color: #000; /* Texto preto para o modo claro */
+  }
+
+  .light-mode .meowl_HeaderProject_alert_title,
+  .light-mode .meowl_HeaderProject_icon_close,
+  .light-mode .meowl_HeaderProject_message,
+  .light-mode .meowl_HeaderProject_alert_icon,
+  .light-mode .meowl_HeaderProject_title h1 {
+    color: #000000;
+
+  }
+
+
+  .meowl_HeaderProject_title_container {
+    max-width: 95%;
+    height: 60px;
+    background-color: #38b764a2;
+    border-radius: 8px;
+    margin-top: 2rem;
+    
+  }
+  .light-mode .meowl_HeaderProject_title_container {
+    background-color: #38b76462;
+  }
+
+  .meowl_HeaderProject_title h1 {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 2.25rem;
+    font-family: var(--font-family);
+  }
+
+   .meowl-upcoming_titles {
+    margin-top: 3rem;
+  }
+
+  .meowl-upcoming_titles h1 {
+    margin-bottom: 1rem;
+  }
+
+  /*------------------500px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+
+
+@media screen and (max-width: 540px) {
+    .meowl_HeaderProject_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    
+    }
+
+    .meowl_HeaderProject_alert_container{
+        width: 95%;
+    }
+    
+    .meowl_HeaderProject_title h1 {
+        margin-left: 1.5rem;
+        margin-top: 0.7rem;
+        font-size: 1.8rem;
+        font-family: var(--font-family);
+      }
+
+  }
+
+/*------------------500px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+
+
+  @media screen and (max-width: 500px) {
+
+    .meowl_HeaderProject_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    
+    }
+
+    .meowl_HeaderProject_alert_container{
+        width: 95%;
+    }
+
+    .meowl_HeaderProject_close {
+        margin-left: 19.8rem;
+       
+    }
+
+    .meowl_HeaderProject_alert_title {
+        font-size: 0.7rem;
+        width: 482px;
+        height: 21px;
+    }
+    .meowl_HeaderProject_message {
+        font-size: 0.65rem;
+        margin-left: 2.9rem;
+    }
+    
+    .meowl_HeaderProject_title h1 {
+        margin-left: 1.5rem;
+        margin-top: 0.7rem;
+        font-size: 1.8rem;
+        font-family: var(--font-family);
+      }
+
+  }
+
+
+  /*------------------376px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+
+
+@media screen and (max-width: 391px) {
+
+    .meowl_HeaderProject_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    
+    }
+
+   
+
+    .meowl_HeaderProject_close {
+        margin-left: 16.8rem;
+       
+    }
+
+    .meowl_HeaderProject_alert_title {
+        font-size: 0.62rem;
+        width: 482px;
+        height: 21px;
+    }
+    
+    .meowl_HeaderProject_title h1 {
+        margin-left: 1.8rem;
+        margin-top: 0.85rem;
+        font-size: 1.5rem;
+        font-family: var(--font-family);
+      }
+
+  }
+
+   /*------------------376px-----------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
+
+
+@media screen and (max-width: 321px) {
+
+    
+
+   
+
+    .meowl_HeaderProject_close {
+        margin-left: 13.7rem;
+       
+    }
+
+    .meowl_HeaderProject_alert_title {
+        font-size: 0.75rem;
+        width: 300px;
+        height: 21px;
+    }
+
+    .meowl_HeaderProject_message {
+        margin-top: 0.6rem;
+        font-size: 0.65rem;
+        margin-left: 2.9rem;
+    }
+    
+    
+    .meowl_HeaderProject_title h1 {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        font-family: var(--font-family);
+      }
+      
+  }

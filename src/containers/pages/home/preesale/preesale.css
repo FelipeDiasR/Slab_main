@@ -1,0 +1,96 @@
+.meow__preesale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #458017c6; 
+}
+
+
+.meow__preesale_container {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.meow__preesale_container h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.85em;
+}
+
+.meow__preesale_container p {
+  font-size: 1.6rem;
+  margin-bottom: 5em;
+  font-weight: 250;
+}
+
+.meow__preesale_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.meow__preesale_buttons_waitlist,
+.meow__preesale_buttons_htbuy {
+  width: 250px;
+  height: 50px;
+  color: #000000;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+.meow__preesale_buttons_waitlist {
+  background-color: #DDDEE2;
+}
+
+
+.meow__preesale_buttons_htbuy {
+  color: #fff;
+  background-color: #2f2b67;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .meow__preesale_container h1 {
+    font-size: 1.8em;
+  }
+
+  .meow__preesale_container p {
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+
+  .meow__preesale_buttons {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .meow__preesale_container {
+    padding: 1rem;
+  }
+
+  .meow__preesale_container h1 {
+    font-size: 1.5em;
+  }
+
+  .meow__preesale_container p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  .meow__preesale_buttons {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .meow__preesale_buttons_waitlist,
+  .meow__preesale_buttons_htbuy {
+    width: 100%;
+    height: 48px;
+  }
+}

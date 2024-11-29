@@ -1,0 +1,480 @@
+.meow__raise {
+    width: 61%;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+    rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+    padding: 20px;
+    color: #ffff;
+    border-radius: #ffff;
+    font-family: var(--font-family);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ffffff35;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+
+
+}   
+
+
+.meow__raise_logo_button {
+   width: 100%;
+   display: flex; 
+   justify-content: space-between;
+   flex-direction: column;
+   margin-top: 2rem;
+   margin-left: 1rem;
+   
+}
+.meow__raise_logo_button h1 {
+    margin-bottom: 1.5rem;
+
+}
+
+
+.meow__raise_text {
+    padding: 9px;
+    justify-content: space-between;
+    margin-left: 0.4rem;
+}
+
+.meow__raise_text h1 {
+    font-family: var(--font-family); 
+    font-size: 1.4rem;
+}
+
+.meow__raise_content {
+    padding: 9px;
+    justify-content: space-between;
+    margin-left: 0.4rem;
+}
+.meow__raise_content h2 {
+    font-family: var(--font-family); 
+    font-size: 0.95rem;
+}
+
+.meow__raise_content h3 {
+    font-size: 0.75rem;
+    margin-bottom: 1.4px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.meow__raise_content p {
+    font-size: 0.75rem;
+    
+}
+
+.meow__raise_seedetails button {
+    font-family: var(--font-family);
+    width: 100%;
+    height: 31px;
+    margin-left: 0.5rem;
+    background-color: #d862ff75;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+/* raise.css */
+.meow__raise_progress {
+    background-color: #e0e0e01e;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+    margin: 30px 0;
+    height: 30px;
+    width: 100%;
+  }
+  
+  .meow__raise_progress_bar {
+    background-color: #d862ff75;
+    height: 100%;
+    border-radius: 25px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(255, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Adicionado para limitar a largura máxima */
+}
+  
+  .meow__raise_progress_bar > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+/* ------------max 2561 -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 2561px) {
+    .meow__raise {
+        width: 73%;
+        height: 500px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    }   
+
+}    
+
+
+/* ------------max 2100 -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 2100px) {
+    .meow__raise {
+        width: 62%;
+        height: 500px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    }   
+
+}  
+
+/* ------------max 1025 -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 1025px) {
+    .meow__raise {
+        width: 47%;
+        height: 500px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    } 
+
+    /* raise.css */
+.meow__raise_progress {
+    background-color: #e0e0e01e;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+    margin-left: 8rem;
+    bottom: 3.5rem;
+    height: 30px;
+    width: 70%;
+  }
+  
+  .meow__raise_progress_bar {
+    background-color: #d862ff75;
+    height: 100%;
+    border-radius: 25px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(255, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .meow__raise_progress_bar > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    
+     
+
+}  
+
+
+/* ------------max 769px -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 801px) {
+    .meow__raise {
+        width: 83%;
+        height: 500px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    } 
+ /* raise.css */
+ .meow__raise_progress {
+    background-color: #e0e0e01e;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+    bottom: 1rem;
+    margin: 30px 0;
+    height: 30px;
+    width: 100%;
+}
+
+.meow__raise_progress_bar {
+    background-color: #d862ff75;
+    height: 100%;
+    border-radius: 25px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(255, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meow__raise_progress_bar > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+}  
+
+/* ------------max 500px -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 500px) {
+    .meow__raise {
+        width: 83%;
+        height: 500px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    } 
+    /* raise.css */
+    .meow__raise_progress {
+        background-color: #e0e0e01e;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        position: relative;
+        bottom: 1.2rem;
+        margin: 30px 0;
+        height: 30px;
+        width: 100%;
+    }
+    
+    .meow__raise_progress_bar {
+        background-color: #d862ff75;
+        height: 100%;
+        border-radius: 25px;
+        text-align: right;
+        white-space: nowrap;
+        overflow: hidden;
+        color: rgb(255, 253, 253);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .meow__raise_progress_bar > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .meow__raise_content p {
+        font-size: 0.75rem;
+        word-break: break-all; /* Quebra de palavras longas para evitar overflow */
+        overflow-wrap: break-word; /* Quebra de palavras longas em contêineres menores */
+        margin: 0; /* Remove margens se necessário */
+        padding: 0; /* Remove preenchimento se necessário */
+        
+        
+    }
+
+}
+
+/* ------------max 426px -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 426px) {
+    .meow__raise{
+        width: 83%;
+        height: 625px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    } 
+    
+
+}
+
+/* ------------max 376px -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 376px) {
+    .meow__raise{
+        width: 83%;
+        height: 630px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    } 
+
+}
+/* ------------max 376px -----------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 326px) {
+    .meow__raise{
+        width: 83%;
+        height: 675px;
+        background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+        rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);;
+        padding: 20px;
+        color: #ffff;
+        border-radius: #ffff;
+        font-family: var(--font-family);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #ffffff35;
+        margin-top: 5rem;
+        margin-left: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    
+    } 
+
+    .meow__raise_logo_button button {
+    
+        font-family: var(--font-family);
+        width: 250px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: rgba(255, 255, 255, 0.774);
+        border: none;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-left: -3.5rem;
+        
+    }
+
+}

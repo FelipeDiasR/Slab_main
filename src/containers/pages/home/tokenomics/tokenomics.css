@@ -1,0 +1,196 @@
+.meow__tokenomics {
+    font-size: 2em;
+    color: #000000;
+    padding: 20px;
+    margin-top: 0rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh + 100px);
+  }
+
+  .light-mode .meow__tokenomics{
+    background-color: #07001c;
+
+  }
+
+  .light-mode .meow__tokenomics_container {
+    color: #fff;
+  }
+  
+  .meow__tokenomics_container {
+    color: #000000;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .meow__tokenomics_container h1 {
+    font-family: var(--font-family);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .meow__tokenomics_container p {
+    font-size: 1.5rem;
+  }
+  
+  .meow__tokenomics_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15rem; /* Adiciona espaço entre a imagem e o texto */
+    margin-top: 1rem;
+  }
+  
+  .meow__tokenomics_image {
+    flex: 1;
+    text-align: center; 
+  }
+  
+  .meow__tokenomics_image img {
+    width: 300%;
+    max-width: 800px; /* Aumenta o tamanho máximo da imagem */
+    height: auto;
+  }
+  
+  .meow__tokenomics_container h3 {
+    margin-top: 3rem;  
+    flex: 1;
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: 0.8em;
+    line-height: 2.1em;
+    font-weight: 650;
+    margin-left: 2rem; /* Adiciona espaço à esquerda do texto para separação da imagem */
+  }
+
+
+  @media screen and (max-width: 1025px) {
+
+    .meow__tokenomics_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 25rem; /* Adiciona espaço entre a imagem e o texto */
+      }
+
+
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .meow__tokenomics_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16rem; /* Adiciona espaço entre a imagem e o texto */
+      }
+
+
+  }
+
+
+
+
+
+
+
+  
+  /* Media Queries para telas menores que 500px */
+  @media screen and (max-width: 500px) {
+    .meow__tokenomics {
+      font-size: 1.5em;
+      padding: 10px;
+      margin-top: 0rem;
+      min-height: calc(70vh + 5rem);
+    }
+  
+    .meow__tokenomics_container h1 {
+      font-size: 2rem;
+    }
+  
+    .meow__tokenomics_content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .meow__tokenomics_image {
+      text-align: center;
+      margin-bottom: 0rem;
+    }
+  
+    .meow__tokenomics_image img {
+      width: 100%;
+      max-width: 400px; /* Ajuste o tamanho da imagem para dispositivos menores */
+    }
+  
+    .meow__tokenomics_container h3 {
+      text-align: center;
+      margin-left: 6.5rem;
+    }
+    .meow__tokenomics_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.1rem; /* Adiciona espaço entre a imagem e o texto */
+      }
+  }
+
+   /* Media Queries para telas menores que 376px */
+   @media screen and (max-width: 376px) {
+
+    .meow__tokenomics_container h3 {
+      text-align: center;
+      margin-left: 4.9rem;
+    }
+
+   }
+
+
+   /* Media Queries para telas menores que 325px */
+   @media screen and (max-width: 325px) {
+    .meow__tokenomics {
+      font-size: 1.5em;
+      padding: 10px;
+      margin-top: 0rem;
+      min-height: calc(70vh + 5rem);
+    }
+  
+    .meow__tokenomics_container h1 {
+      font-size: 2rem;
+    }
+  
+    .meow__tokenomics_content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .meow__tokenomics_image {
+      text-align: center;
+      margin-bottom: 0rem;
+    }
+  
+    .meow__tokenomics_image img {
+      width: 100%;
+      max-width: 400px; /* Ajuste o tamanho da imagem para dispositivos menores */
+    }
+  
+    .meow__tokenomics_container h3 {
+      text-align: center;
+      margin-left: 3rem;
+    }
+    .meow__tokenomics_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.1rem; /* Adiciona espaço entre a imagem e o texto */
+      }
+  }
+  

@@ -1,0 +1,103 @@
+.meow__starter_wheel_landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da viewport */
+  width: 100vw; /* Largura total da viewport */
+}
+
+.meowl__starter_wheel_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Permite posicionamento absoluto dentro do container */
+}
+
+.meowl__starter_wheel_wheel {
+  transition: transform 5s ease-out; /* Transição suave de 3 segundos */
+  max-width: 100%;
+  max-height: 600px; /* Ajuste conforme necessário */
+}
+
+.meowl__starter_wheel_pin {
+  position: absolute; /* Posiciona o Pin dentro do container relativo */
+  top: 35%; /* Centraliza verticalmente */
+  left: 75%;
+  transform: translateY(-50%); /* Ajusta a centralização */
+  z-index: 10; /* Garante que o Pin fique acima da roda */
+}
+
+.pin-wheel {
+  width: 175px;
+}
+
+.meowl__starter_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Espaçamento entre a roda e os botões */
+}
+
+.meowl__starter_wallet {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: bold;
+  width: 140%;
+  height: 35px;
+  background-color: #428EAE;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Espaçamento abaixo do botão de carteira */
+}
+
+.meowl__starter_bet_minbet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Para centralizar o conteúdo */
+  margin-bottom: 20px; /* Espaçamento abaixo do conteúdo */
+}
+
+.meowl__starter_bet {
+  display: inline-block;
+  margin-right: 10px; /* Espaçamento entre o botão de aposta e o texto */
+  font-family: var(--font-family);
+  font-weight: bold;
+  width: 75%;
+  height: 35px;
+  background-color: #428EAE;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+}
+
+.meowl__starter_minbet {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: 0.7rem;
+  width: 100px;
+  color: #ffff;
+  font-weight: bold;
+  margin-left: 25px; /* Espaçamento entre o texto e o botão de aposta */
+}
+
+.meowl_starter_Spin {
+  margin-top: 20px; /* Espaçamento entre o botão de aposta e o botão de girar */
+  width: 100%; /* Para centralizar o botão */
+  display: flex;
+  justify-content: center; /* Centralizar o botão */
+}
+
+.meowl__starter_spinwheel {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: bold;
+  width: 140%; /* Ajuste conforme necessário */
+  height: 35px;
+  background-color: #D862FF;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+}

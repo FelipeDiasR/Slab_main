@@ -1,0 +1,719 @@
+.meow__footer {
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    border: 1px solid transparent;
+    margin-top: 200px;
+    width: auto;
+    height: 40rem;
+    background-color: transparent; /* Cor de fundo */
+    flex-direction: column;
+
+}
+
+.meow__footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* logo */
+.meow__footer-logo {
+    margin-top: 0rem;
+
+}
+
+/* text Experience the next level of memes   */
+.meow__footer-logo h3 {
+    font-size: var(--font-family);
+    font-weight: 400;
+    margin-left: 4rem;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+/* -----meow verse sector --------*/
+.meow__footer_firstcolun {
+    margin-left: 73rem;
+    margin-top: -5.1rem;
+    font-family: var(--font-family);
+}
+
+.meow__footer_firstcolun h4 {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.74);
+}
+.meow__footer_firstcolun p  {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+    color: #000000
+}
+
+
+/* -------- about meowl sector ------------*/
+.meow__footer_secondcolun {
+    margin-left: 87rem;
+    margin-top: -7.5rem;
+    font-family: var(--font-family);
+    color:  rgba(0, 0, 0, 0.74);;
+}
+
+.meow__footer_secondcolun h4 {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+}
+.meow__footer_secondcolun p  {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+    color: #000000
+}
+
+.meow__footer_division {
+    position: relative;
+    top: 5rem;
+    margin-left: 12rem;
+
+}
+
+/* -------copy sector --------*/
+
+.meow__footer_copyright {
+    display: flex;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
+
+.meow__footer_copyright p{
+    color: #000000;
+    
+}
+
+.meow__footer_sociallist {
+    display: flex;
+    list-style: none;
+    margin-left: 68rem;
+    margin-top: -0.89rem;
+    color: #000000;
+
+}
+.meow__footer_sociallist li{
+ margin:  1rem;
+
+}
+
+/* Modo claro */
+.lightmode .meow__footer {
+    color: #000; /* cor do texto no modo claro */
+}
+
+/* Colunas */
+.meow__footer_firstcolun h4,
+.meow__footer_secondcolun h4 {
+    color: rgba(255, 255, 255, 0.74); /* cor padrão dos títulos */
+}
+
+.lightmode .meow__footer_firstcolun h4,
+.lightmode .meow__footer_secondcolun h4 {
+    color: #000; /* cor dos títulos no modo claro */
+}
+
+.lightmode .meow__footer-logo h3 {
+    font-size: var(--font-family);
+    font-weight: 400;
+    margin-left: 4rem;
+    color: #000; /* cor dos títulos no modo claro */
+}
+
+
+
+.lightmode .meow__footer_firstcolun p,
+.lightmode .meow__footer_secondcolun p,
+.lightmode .meow__footer_copyright p {
+    color: #000000; /* cor do parágrafo no modo claro */
+}
+
+.lightmode .meow__footer_sociallist li a {
+    color: #000000; /* cor dos ícones de redes sociais no modo claro */
+}
+
+/* tela até 2800 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 3000px) {
+    .meow__footer_firstcolun {
+        margin-left: 115rem;
+        margin-top: -5.1rem;
+        font-family: var(--font-family);
+    }
+    
+    
+    /* -------- about meowl sector ------------*/
+    .meow__footer_secondcolun {
+        margin-left: 130rem;
+        margin-top: -7.5rem;
+        font-family: var(--font-family);
+        color:  rgba(255, 255, 255, 0.74);;
+    }
+    
+    
+    .meow__footer_division {
+        position: relative;
+        top: 5rem;
+        margin-left: 12rem;
+    
+    }
+
+    .meow__footer_sociallist {
+        display: flex;
+        list-style: none;
+        margin-left: 68rem;
+        margin-top: -0.89rem;
+    }
+
+
+}
+
+/* tela até 2200 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 2270px) { 
+    .meow__footer {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        border: 1px solid transparent;
+        margin-top: 200px;
+        width: auto;
+        height: 40rem;
+        background: linear-gradient(90deg, rgba(155, 150, 176, 0.010) 100%,
+         rgba(0, 0, 0, 1) 100%, rgba(210, 208, 211, 0.075) 100%); /* Cor de fundo */
+        flex-direction: column;
+    
+    }
+    
+    .meow__footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    /* logo */
+    .meow__footer-logo {
+        margin-top: 0rem;
+    
+    }
+    
+    /* text Experience the next level of memes   */
+    .meow__footer-logo h3 {
+        font-size: var(--font-family);
+        font-weight: 400;
+        margin-left: 4rem;
+       
+    }
+    
+    /* -----meow verse sector --------*/
+    .meow__footer_firstcolun {
+        margin-left: 73rem;
+        margin-top: -5.1rem;
+        font-family: var(--font-family);
+    }
+    
+    .meow__footer_firstcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+      
+    }
+    .meow__footer_firstcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+       
+    }
+    
+    
+    /* -------- about meowl sector ------------*/
+    .meow__footer_secondcolun {
+        margin-left: 87rem;
+        margin-top: -7.5rem;
+        font-family: var(--font-family);
+      
+    }
+    
+    .meow__footer_secondcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+    }
+    .meow__footer_secondcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+       
+    }
+    
+    .meow__footer_division {
+        position: relative;
+        top: 5rem;
+        margin-left: 12rem;
+    
+    }
+    
+    /* -------copy sector --------*/
+    
+    .meow__footer_copyright {
+        display: flex;
+        margin-top: 12rem;
+        margin-left: 2rem;
+    }
+    
+    
+    .meow__footer_sociallist {
+        display: flex;
+        list-style: none;
+        margin-left: 68rem;
+        margin-top: -0.89rem;
+    
+    }
+    .meow__footer_sociallist li{
+     margin:  1rem;
+    
+    }
+
+}
+
+
+/* tela até 1445 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 1500px) {
+    /* -----meow verse sector --------*/
+.meow__footer_firstcolun {
+    margin-left: 71rem;
+    margin-top: -5.1rem;
+    font-family: var(--font-family);
+}
+
+.meow__footer_firstcolun h4 {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+    
+}
+.meow__footer_firstcolun p  {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+    
+}
+
+
+/* -------- about meowl sector ------------*/
+
+
+.meow__footer_secondcolun {
+    margin-left: 82rem;
+    margin-top: -7.5rem;
+    font-family: var(--font-family);
+    
+}
+
+.meow__footer_secondcolun h4 {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+}
+.meow__footer_secondcolun p  {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+   
+}
+
+.meow__footer_division {
+    position: relative;
+    top: 5rem;
+    margin-left: 12rem;
+
+}
+}
+
+
+/* tela até 1025 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 1025px) {
+    .meow__footer {
+        display: flex;
+        color: #fff;
+        border: 1px solid transparent;
+        margin-top: 200px;
+        margin-left: 1rem;
+        width: auto;
+        height: 58rem;
+        flex-direction: column;
+    
+    }
+    /* logo ---- */
+    .meow__footer-logo img{
+        width: 300px;
+    }
+
+
+    /* text Experience the next level of memes   */
+    .meow__footer-logo h3 {
+        font-size: var(--font-family);
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 5rem;
+        margin-top: 0rem;
+        
+    }
+
+    /* -----meow verse sector --------*/
+    .meow__footer_firstcolun {
+        margin-left: 6.7rem;
+        margin-top: 5.1rem;
+        font-family: var(--font-family);
+    }
+
+    .meow__footer_firstcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+       
+    }
+    .meow__footer_firstcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+     
+    }
+
+
+    /* -------- about meowl sector ------------*/
+    .meow__footer_secondcolun {
+        margin-left: 6.7rem;
+        margin-top: 2.1rem;
+        font-family: var(--font-family);
+        
+    }
+
+    .meow__footer_secondcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+    }
+    .meow__footer_secondcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+        
+    }
+
+    .meow__footer_division {
+        display: none;
+
+    }
+
+    /* -------copy sector --------*/
+
+    .meow__footer_copyright {
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 6rem;
+    
+    }
+
+    
+
+    .meow__footer_sociallist {
+        display: flex;
+        list-style: none;
+        margin-top: -0.9rem;
+        margin-left: 20rem;
+
+    }
+    .meow__footer_sociallist li{
+    margin:  1rem;
+
+    }
+    
+ }
+
+/* tela até 800 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 800px) {
+    .meow__footer {
+        display: flex;
+        color: #fff;
+        border: 1px solid transparent;
+        margin-top: 200px;
+        margin-left: 1rem;
+        width: auto;
+        height: 58rem;
+        flex-direction: column;
+    
+    }
+    /* logo ---- */
+    .meow__footer-logo img{
+        width: 300px;
+    }
+
+
+    /* text Experience the next level of memes   */
+    .meow__footer-logo h3 {
+        font-size: var(--font-family);
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-left: 27rem;
+        margin-top: -5.5rem;
+        
+    }
+
+    /* -----meow verse sector --------*/
+    .meow__footer_firstcolun {
+        margin-left: 6.7rem;
+        margin-top: 5.1rem;
+        font-family: var(--font-family);
+    }
+
+    .meow__footer_firstcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+        
+    }
+    .meow__footer_firstcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+       
+    }
+
+
+    /* -------- about meowl sector ------------*/
+    .meow__footer_secondcolun {
+        margin-left: 6.7rem;
+        margin-top: 2.1rem;
+        font-family: var(--font-family);
+        
+    }
+
+    .meow__footer_secondcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+    }
+    .meow__footer_secondcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+       
+    }
+
+    .meow__footer_division {
+        display: none;
+
+    }
+
+    /* -------copy sector --------*/
+
+    .meow__footer_copyright {
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 6rem;
+    
+    }
+
+    
+
+    .meow__footer_sociallist {
+        display: flex;
+        list-style: none;
+        margin-top: -0.9rem;
+        margin-left: 10rem;
+
+    }
+    .meow__footer_sociallist li{
+    margin:  1rem;
+
+    }
+    
+ }
+
+/* tela até 500 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 500px) {
+    .meow__footer {
+        display: flex;
+        color: #fff;
+        border: 1px solid transparent;
+        margin-top: 200px;
+        margin-left: -1rem;
+        width: auto;
+        height: 58rem;
+        flex-direction: column;
+    
+    }
+
+    
+    /* logo */
+    .meow__footer-logo {
+        margin-top: 0rem;
+    }
+
+
+    /* logo ---- */
+    .meow__footer-logo img{
+        width: 200px;
+    }
+
+
+    /* text Experience the next level of memes   */
+    .meow__footer-logo h3 {
+        font-size: var(--font-family);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-left: 12rem;
+        margin-top: -3.5rem;
+        
+    }
+
+    .light-mode .meow__footer-logo h3 {
+        font-size: var(--font-family);
+        font-size: 0.9rem;
+        font-weight: 450;
+        margin-left: 12rem;
+        margin-top: -3.5rem;
+    }
+
+    /* -----meow verse sector --------*/
+    .meow__footer_firstcolun {
+        margin-left: 3.7rem;
+        margin-top: 2.1rem;
+        font-family: var(--font-family);
+    }
+
+    .meow__footer_firstcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+    
+    }
+    .meow__footer_firstcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+       
+    }
+
+
+    /* -------- about meowl sector ------------*/
+    .meow__footer_secondcolun {
+        margin-left: 3.7rem;
+        margin-top: 2.1rem;
+        font-family: var(--font-family);
+        
+    }
+
+    .meow__footer_secondcolun h4 {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+    }
+    .meow__footer_secondcolun p  {
+        margin-bottom: 1.3rem;
+        font-weight: 400;
+      
+    }
+
+    .meow__footer_division {
+        position: relative;
+        top: 5rem;
+        margin-left: 12rem;
+
+    }
+
+    /* -------copy sector --------*/
+
+    .meow__footer_copyright {
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    
+    }
+
+   
+
+    .meow__footer_sociallist {
+        display: flex;
+        list-style: none;
+        margin-top: -0.9rem;
+        margin-left: 2rem;
+
+    }
+    .meow__footer_sociallist li{
+    margin:  1rem;
+
+    }
+ }
+
+ /* tela até 375 px ---------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+--------------------------------------*/
+
+
+@media screen and (max-width: 380px) {
+    
+    /* -------copy sector --------*/
+    .meow__footer {
+        display: flex;
+        color: #fff;
+        border: 1px solid transparent;
+        margin-top: 200px;
+        margin-left: -2.2rem;
+        width: auto;
+        height: 58rem;
+        flex-direction: column;
+    
+    }
+
+    .meow__footer_copyright {
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 3.5rem;
+    
+    }
+
+    .light-mode .meow__footer-logo h3 {
+        font-size: var(--font-family);
+        font-size: 0.8rem;
+        font-weight: 450;
+        margin-left: 11rem;
+        margin-top: -3.5rem;
+    }
+
+    
+
+    .meow__footer_sociallist {
+        display: flex;
+        list-style: none;
+        margin-top: -0.9rem;
+        margin-left: 2rem;
+
+    }
+    .meow__footer_sociallist li{
+    margin:  1rem;
+
+    }
+ }

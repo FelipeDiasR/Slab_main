@@ -1,0 +1,62 @@
+{
+  "name": "meowl_final",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^4.0.4",
+    "@ethersproject/providers": "^5.7.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3modal/react": "^2.7.1",
+    "bignumber.js": "^9.1.2",
+    "date-fns": "^3.6.0",
+    "ethers": "^6.13.1",
+    "firebase": "^10.12.2",
+    "fortmatic": "^2.4.0",
+    "meowl_final": "file:",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-ga": "^3.3.1",
+    "react-ga4": "^2.1.0",
+    "react-icons": "^5.2.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "web3modal": "^1.9.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ]
+  }
+}

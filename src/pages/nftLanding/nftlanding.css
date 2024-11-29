@@ -1,0 +1,139 @@
+.meow_nfts_cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha se não houver espaço */
+    gap: 20px; /* Espaçamento entre os cards */
+   
+  }
+
+.meowl__nft_intro_text {
+    text-align: center;
+    margin-bottom: 3rem; /* Espaçamento entre o texto e os cards */
+    margin-top: 5rem;
+  }
+  .light-mode .meowl__nft_intro_text h1,
+  .light-mode .meow__beneffits_text {
+    color: black;
+
+  }
+  
+  .meowl__nft_intro_text h1 {
+    color: #ffff;
+    font-family: var(--font-family);
+    font-size: 3rem;
+  }
+  
+  .meowl__nft_intro_text h3 {
+    color: #D862FF;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+
+  }
+  .load-more-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Espaçamento superior opcional */
+  }
+  
+  .load-more-button {
+    padding: 10px 20px;
+    background-color: #D862FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .load-more-button:hover {
+    background-color: #b94bcc;
+  }
+
+  
+  .load-more-button-container,
+.opensea-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  
+}
+
+.seeall-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+.load-more-button,
+.opensea-button {
+  padding: 10px 20px;
+  background-color: #D862FF;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.load-more-button:hover,
+.opensea-button:hover {
+  background-color: #b94bcc;
+}
+.meow_beneffits_container {
+    background: linear-gradient(90deg, rgba(113, 61, 255, 0.055) 0%, rgba(113, 61, 255, 0.171) 50%, rgba(113, 61, 255, 0.075) 100%);
+    padding: 20px; /* Adiciona um padding ao redor do contêiner para espaçamento */
+    padding-top: 10px; /* Padding superior maior para afastar o texto da borda superior */
+    padding-bottom: 40px; /* Padding inferior maior para afastar o botão da borda inferior */
+  }
+
+.meow__beneffits_text {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffff;
+    font-family: var(--font-family);
+    margin-top: 5rem;
+    
+   
+  }
+  
+  .meow__beneffits_text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .meow__beneffits_text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 800px; /* Limite a largura do parágrafo para melhorar a legibilidade */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    .meow__beneffits_text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        max-width: 800px; /* Limite a largura do parágrafo para melhorar a legibilidade */
+        margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+        margin-top: 2rem;
+      }
+
+  }
+
+  @media screen and (max-width: 321px) {
+    .meow__beneffits_text p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        max-width: 800px; /* Limite a largura do parágrafo para melhorar a legibilidade */
+        margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+        margin-top: 2rem;
+      }
+
+  }
+  
+
+  

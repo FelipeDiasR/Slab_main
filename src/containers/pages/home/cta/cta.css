@@ -1,0 +1,408 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+  }
+
+  .forms_container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  
+  .topHalf {
+    height: 50%;
+    background-color: transparent;
+  }
+  
+  .bottomHalf {
+    height: 50%;
+    background-color: black;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forms_banner_image {
+    width: 100%; /* A imagem ocupará toda a largura do contêiner */
+    height: 400px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    border-radius: 10px;
+  }
+  
+  
+  /* Estilos para o texto sobreposto */
+  .imageTextOverlay {
+    position: absolute;
+    top: 6.5rem; /* Ajuste a margem superior conforme necessário */
+    left: 1.7rem; /* Margem da esquerda */
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0); /* Fundo semi-transparente para melhor contraste */
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .imageTextOverlay h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .desktopText p {
+    display: block;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.4;
+    margin-top: 1rem;
+  }
+
+  .mobileText p {
+    display: none;
+  }
+
+  .cta_button {
+    background-color: #458017ca;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta_button:hover {
+    background-color: #45801793;
+  }
+  /* Seção de Fundo e Formulário */
+  .forms_container_background {
+    background-color: #050504;
+    padding: 40px;
+    width: 100%;
+    color: white;
+  }
+
+  
+  .forms_container_content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .forms_container_content h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+
+  .forms_division {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffffc6;
+    margin-bottom: 1rem;
+
+}
+  
+  .forms_container_content label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .forms_container_content input,
+  .forms_container_content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .forms_container_content input:focus,
+  .forms_container_content textarea:focus {
+    border-color: #458017ca;
+    outline: none;
+  }
+  
+  .submit_button {
+    background-color: #458017ca;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit_button:hover {
+    background-color: #45801793;
+  }
+
+
+  @media screen and (max-width: 1540px) {
+    .forms_banner_image {
+        width: 100%; /* A imagem ocupará toda a largura do contêiner */
+        height: 400px; /* Ajuste a altura conforme necessário */
+        object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+        border-radius: 10px;
+      }
+      
+      
+      /* Estilos para o texto sobreposto */
+      .imageTextOverlay {
+        top: 6.5rem; /* Ajuste a margem superior conforme necessário */
+        left: 1.7rem; /* Margem da esquerda */
+        padding: 1rem;
+    
+      }
+      
+      .imageTextOverlay h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.8rem;
+        
+      }
+      
+      .desktopText p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      .cta_button {
+        margin-top: 1.5rem;
+        transition: background-color 0.3s ease;
+      }
+    
+
+  }
+
+  @media screen and (max-width: 1250px) {
+    .forms_banner_image {
+        width: 100%; /* A imagem ocupará toda a largura do contêiner */
+        height: 320px; /* Ajuste a altura conforme necessário */
+      }
+      
+      
+      /* Estilos para o texto sobreposto */
+      .imageTextOverlay {
+        top: 4.8rem; /* Ajuste a margem superior conforme necessário */
+        left: 1.7rem; /* Margem da esquerda */
+        padding: 1rem;
+    
+      }
+      
+      .imageTextOverlay h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.8rem;
+        
+      }
+      
+      .desktopText p {
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+      .cta_button {
+        margin-top: 1.5rem;
+        transition: background-color 0.3s ease;
+      }
+    
+
+  }
+
+  @media screen and (max-width: 985px) {
+    .forms_banner_image {
+        width: 100%; /* A imagem ocupará toda a largura do contêiner */
+        height: 250px; /* Ajuste a altura conforme necessário */
+      }
+      
+      
+      /* Estilos para o texto sobreposto */
+      .imageTextOverlay {
+        top: 3.5rem; /* Ajuste a margem superior conforme necessário */
+        left: 1rem; /* Margem da esquerda */
+        padding: 1rem;
+    
+      }
+      
+      .imageTextOverlay h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.5rem;
+        
+      }
+      
+      .desktopText p {
+        font-size: 0.9rem;
+        margin-top: 0.7rem;
+      }
+      .cta_button {
+        margin-top: 0.7rem;
+        transition: background-color 0.3s ease;
+        font-size: 0.7rem;
+      }
+    
+
+  }
+
+  @media screen and (max-width: 740px) {
+    .forms_banner_image {
+        width: 100%; /* A imagem ocupará toda a largura do contêiner */
+        height: 180px; /* Ajuste a altura conforme necessário */
+      }
+      
+      
+      /* Estilos para o texto sobreposto */
+      .imageTextOverlay {
+        top: 1.8rem; /* Ajuste a margem superior conforme necessário */
+        left: 0rem; /* Margem da esquerda */
+        padding: 1rem;
+    
+      }
+      
+      .imageTextOverlay h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+        
+      }
+      
+      .desktopText p {
+        font-size: 0.65rem;
+        margin-top: 0.5rem;
+      }
+      .cta_button {
+        margin-top: 0.5rem;
+        transition: background-color 0.3s ease;
+        font-size: 0.50rem;
+      }
+    
+
+  }
+
+  @media screen and (max-width: 530px) {
+    .forms_banner_image {
+      width: 80%; /* A imagem ocupará toda a largura do contêiner */
+      height: 250px; /* Ajuste a altura conforme necessário */
+    }
+      
+      /* Estilos para o texto sobreposto */
+      .imageTextOverlay {
+        top: 5rem; /* Ajuste a margem superior conforme necessário */
+        left: 2.4rem; /* Margem da esquerda */
+        padding: 1rem;
+    
+      }
+      
+      .imageTextOverlay h2 {
+        margin: 0 0 0.1rem;
+        font-size: 0.85rem;
+        
+      }
+      
+      .desktopText p {
+        display: none;
+      }
+
+      .mobileText p {
+        display: block;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        max-width: 160px;
+      }
+      .cta_button {
+        background-color: #458017ca;
+        font-weight: bold;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 2rem;
+        transition: background-color 0.3s ease;
+      }
+      .forms_container_content {
+        margin-top: -3rem;
+        
+      }
+    
+
+  }
+
+  @media screen and (max-width: 376px) {
+    .forms_banner_image {
+        width: 80%; /* A imagem ocupará toda a largura do contêiner */
+        height: 250px; /* Ajuste a altura conforme necessário */
+      }
+      
+      
+      /* Estilos para o texto sobreposto */
+      .imageTextOverlay {
+        top: 5rem; /* Ajuste a margem superior conforme necessário */
+        left: 2rem; /* Margem da esquerda */
+        padding: 1rem;
+    
+      }
+      
+      .imageTextOverlay h2 {
+        margin: 0 0 0.1rem;
+        font-size: 0.7rem;
+        
+      }
+      
+      .desktopText p {
+        display: none;
+      }
+
+      .mobileText p {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.7rem;
+        max-width: 100px;
+      }
+      .cta_button {
+        margin-top: 2.5rem;
+        transition: background-color 0.3s ease;
+        font-size: 0.55rem;
+      }
+
+      .forms_container_content {
+        margin-top: -3rem;
+        
+      }
+      
+    
+
+  }
+
+

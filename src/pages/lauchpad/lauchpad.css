@@ -1,0 +1,26 @@
+/*.meow__lauchpad {
+    background: linear-gradient(90deg, rgba(113, 61, 255, 0.055) 0%, rgba(113, 61, 255, 0.171) 50%, rgba(113, 61, 255, 0.075) 100%);
+
+}*/
+
+
+
+.meow__lauchpad_global {  
+    font-family: var(--font-family);
+    color: rgba(255, 255, 255, 0.88);
+    align-items: center;
+    padding: 2.5rem;
+    margin-left: 2rem;
+    
+}
+
+.meow__lauchpad_cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+
+/*https://api.github.com/users/edsonmaia/repos*/

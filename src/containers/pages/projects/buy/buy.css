@@ -1,0 +1,212 @@
+/* Estilo do container principal */
+.meow__buy {
+    width: 90.5%;
+    height: 350px;
+    background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%,
+    rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);
+    padding: 20px;
+    color: #ffff;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    box-shadow: 5px 5px 10px #ffffff35;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo do botão somente para dispositivos móveis */
+.mobile-only {
+    display: none; /* Esconde o botão por padrão */
+}
+
+/* Text -----------------------------------------*/
+.meow__buy h1 {
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.meow__buy h2 {
+    font-family: var(--font-family);
+    font-size: 0.95rem;
+}
+
+.meow__buy h3 {
+    font-size: 0.75rem;
+    margin-bottom: 1.4px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.meow__buy p {
+    font-size: 0.75rem;
+}
+
+/* Position --------------------------------------------*/
+.meow__buy_pool {
+    margin-left: 2rem;
+    justify-content: space-between;
+}
+
+.meow__buy_section {
+    justify-content: space-between;
+}
+
+.meow__buy_inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.meow__buy_text p {
+    margin-bottom: 1rem;
+}
+
+/* Estilo dos campos de input */
+.meow__buy_inputs input {
+    flex: 2;
+    background-color: #c98cdd1f;
+    width: 100%;
+    min-height: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 0 1rem;
+    border-radius: 8px;
+    color: #fff; /* Cor do texto digitado */
+    margin-bottom: 1rem;
+}
+
+/* Estilo dos botões */
+.meow__buy_buttons {
+    display: flex;
+    flex-direction: row; /* Botões em linha */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Cor padrão para todos os botões */
+.meow__buy_inputs button {
+    font-family: var(--font-family);
+    width: 50%;
+    height: 31px;
+    background-color: #d862ff75;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    margin-top: 0.1rem;
+}
+
+/* Classe específica para o segundo botão */
+.meow__buy_inputs .buy-tokens-button {
+    background-color: #428eae; /* Cor igual ao botão existente */
+}
+
+.meow__buy_distribution_seedetails {
+    justify-content: space-between;
+}
+
+.meow__buy_claim_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.meow__buy_claim_section button {
+    font-family: var(--font-family);
+    width: 50%;
+    height: 31px;
+    background-color: #d862ff75;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    margin-top: 0.1rem;
+}
+
+/* Estilo para a sobreposição desfocada */
+.blurred {
+    filter: blur(1.2px); /* Ajuste a intensidade do desfoque conforme necessário */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.185);
+    color: rgba(255, 255, 255, 0.842);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 35px;
+    pointer-events: none; /* Garante que a sobreposição não seja clicável */
+    width: 200%;
+    z-index: 10; /* Coloca a sobreposição acima do conteúdo desfocado */
+}
+
+.opaque {
+    opacity: 0.5; /* Define a opacidade para as seções desativadas */
+    pointer-events: none; /* Impede interações com as seções desativadas */
+}
+
+/* Media Queries */
+
+/* Max width 1441px */
+@media screen and (max-width: 1441px) {
+    .meow__buy {
+        width: 92%;
+        height: 350px;
+    }
+}
+
+/* Max width 1025px */
+@media screen and (max-width: 1025px) {
+    .meow__buy {
+        width: 92.5%;
+        height: 350px;
+    }
+}
+
+/* Max width 800px */
+@media screen and (max-width: 800px) {
+    .meow__buy {
+        width: 84%;
+        height: 350px;
+    }
+    .mobile-only {
+        display: inline-block; /* Exibe o botão apenas em telas menores */
+    }
+    .desktop-only{
+        display: none;
+    }
+}
+
+/* Max width 500px */
+@media screen and (max-width: 500px) {
+    .meow__buy {
+        width: 83%;
+        height: 920px;
+        margin-left: 2.1rem;
+        flex-direction: column;
+    }
+    .meow__buy_pool {
+        margin-left: 0.1rem;
+    }
+}
+
+/* Max width 330px */
+@media screen and (max-width: 330px) {
+    .meow__buy {
+        width: 83%;
+        height: 920px;
+        margin-left: 1.9rem;
+        flex-direction: column;
+    }
+    .meow__buy_pool {
+        margin-left: 0.1rem;
+    }
+}

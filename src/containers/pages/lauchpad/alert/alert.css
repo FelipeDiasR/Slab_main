@@ -1,0 +1,202 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+/* Estilo do alerta */
+.meow__alert {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1370px;
+  padding: 1rem;
+  margin: 2rem auto; /* Centraliza o alerta horizontalmente e adiciona espaço superior */
+  color: rgb(12, 1, 1);
+  background-color: #fee2e2;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family);
+}
+
+.meow__alert_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meow__alert_icon {
+  color: red;
+  margin-right: 1rem;
+  flex-shrink: 0; /* Impede que o ícone encolha */
+}
+
+.meow__alert_title {
+  flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+  font-size: 1.3rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.meow__alert_icon_close {
+  color: red;
+  cursor: pointer;
+  flex-shrink: 0; /* Impede que o ícone de fechar encolha */
+}
+
+.meow__alert_message {
+  margin: 0.5rem 0 0 2rem; /* Margem superior entre o título e a mensagem */
+  line-height: 1.2;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  .meow__alert {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .meow__alert_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meow__alert_title {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  .meow__alert_message {
+    margin-left: 2rem;
+  }
+  .meow__alert_icon_close {
+    color: red;
+    cursor: pointer;
+    flex-shrink: 0; /* Impede que o ícone de fechar encolha */
+    position: relative;
+    left: 55rem;
+    bottom: 4rem;
+  }
+  .meow__alert_icon {
+    color: red;
+    margin-right: 1rem;
+    flex-shrink: 0; /* Impede que o ícone encolha */
+    position: relative;
+    top: 1rem;
+  }
+
+}
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+ 
+
+  
+
+  .meow__alert_icon_close {
+    color: red;
+    cursor: pointer;
+    flex-shrink: 0; /* Impede que o ícone de fechar encolha */
+    position: relative;
+    left: 40rem;
+    bottom: 4rem;
+  }
+
+
+
+
+}
+
+/* Responsividade */
+@media screen and (max-width: 500px) {
+  .meow__alert {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .meow__alert_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meow__alert_title {
+    margin-bottom: 1rem;
+  }
+
+  .meow__alert_message {
+    margin-left: 0;
+  }
+
+  .meow__alert_icon_close {
+    color: red;
+    cursor: pointer;
+    flex-shrink: 0; /* Impede que o ícone de fechar encolha */
+    position: relative;
+    left: 21rem;
+    bottom: 4rem;
+  }
+
+  .meow__alert_icon {
+    color: red;
+    margin-right: 1rem;
+    flex-shrink: 0; /* Impede que o ícone encolha */
+    position: relative;
+    top: 1rem;
+  }
+
+  .meow__alert_title {
+    flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.2;
+    margin-left: 1.5rem;
+    
+  }
+
+  .meow__alert_message {
+    margin: 0.5rem 0 0 2rem; /* Margem superior entre o título e a mensagem */
+    line-height: 1.2;
+    margin-left: 1.5rem;
+  }
+}
+
+/* Responsividade */
+@media screen and (max-width: 395px) {
+ 
+
+  
+
+  .meow__alert_icon_close {
+    color: red;
+    cursor: pointer;
+    flex-shrink: 0; /* Impede que o ícone de fechar encolha */
+    position: relative;
+    left: 18rem;
+    bottom: 4rem;
+  }
+
+
+
+
+}
+
+/* Responsividade */
+@media screen and (max-width: 321px) {
+ 
+
+  
+
+  .meow__alert_icon_close {
+    color: red;
+    cursor: pointer;
+    flex-shrink: 0; /* Impede que o ícone de fechar encolha */
+    position: relative;
+    left: 15.5rem;
+    bottom: 5.9rem;
+  }
+
+
+
+
+}
+

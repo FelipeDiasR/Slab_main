@@ -1,0 +1,831 @@
+.meowl_navegation {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.meowl_navegation_container{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.meowl_navegation_content {
+    display: flex;
+    
+}
+.meowl_navegation_paragraph p {
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+  
+  .meowl_navegation_paragraph p.actived {
+    border-bottom: 2px solid #000000;  /*Cor do texto sublinhado quando ativo */
+  }
+  .light-mode  .meowl_navegation_paragraph p.actived {
+    border-bottom: 2px solid #000000;  /*Cor do texto sublinhado quando ativo */
+  }
+
+.meowl_navegation_paragraph {
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.meowl_navegation_box {
+    width: 770px;
+    height: 95px;
+    background-color: #fff7a3;
+    border-radius: 8px;
+    margin-top: 2rem;
+
+}
+.meowl_buy_claim_box {
+    width: 770px;
+    height: 210px;
+    background-color: #FFF1C3;
+    border-radius: 8px;
+    margin-top: 2rem;
+
+}
+
+
+.meowl_buy_claim_box p {
+    margin-left: 7.5rem;
+    margin-top: 5.5rem;
+}
+
+.light-mode .meowl_navegation_box {
+    background-color: #FFF1C3;
+}
+
+.meowl_navegation_box {
+    display: flex;
+}
+
+
+.meowl_navegation_box_content {
+    margin-top: 1.3rem;
+    display: flex;
+    
+}
+
+.meowl_meowl_navegation_box_icon {  
+    width: 2.5rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+}
+
+.meowl_navegation_box p {
+    width: 650px;;
+    margin-left: 1rem;
+}
+.switch-network-button{
+    font-family: var(--font-family);
+    width: 115px;
+    height: 31px;
+    background-color: #280377;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+   
+
+}
+
+.meowl_navegation_pools_container {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.meowl_navegation_earlier {
+    width: 371px;
+    height: 279px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.meowl_navegation_tokenInfo_container {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.meowl_navegation_price {
+    width: 237px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.meowl_navegation_token_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.meowl_navegation_token_info_container {
+    width: 437px;
+    height: 285px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 2rem;
+    
+    
+}
+.meowl_navegation_token_info_title {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.meowl_teste2 {
+    margin-top: 2rem;
+}
+.meowl_navegation_token_info_h2 {
+    display: flex;
+}
+.meowl_navegation_token_info_h2 h2 {
+    margin-bottom: 1rem;
+   
+}
+.meowl_navegation_token_info_data1 p,
+.meowl_navegation_token_info_data2 p,
+.meowl_navegation_token_info_data3 p {
+    margin-right: 1.8rem;
+}
+
+.meowl_navegation_token_info_data1,
+.meowl_navegation_token_info_data2,
+.meowl_navegation_token_info_data3 {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    overflow: hidden; /* Esconde qualquer estouro */
+    max-width: 100%; /* Garante que o container não estoure */
+    margin-bottom: 1rem;
+}
+.meowl_navegation_user_container h3,
+.meowl_navegation_title_container h3 {
+    font-size: 0.75rem;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+.light-mode .meowl_navegation_title_container h3,
+.light-mode .meowl_navegation_user_container h3{
+    color: #0000009f;
+}
+
+.meowl_navegation_title_container p,
+.meowl_navegation_user_container p {
+    font-size: 0.8rem ;
+}
+.meowl_navegation_BuyMint {
+    width: 371px;
+    height: 279px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.meowl_buy_title_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.meowl_buy_title_input input {
+    flex: 2;
+    background-color: #999999;
+    width: 95%;
+    min-height: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #010000; /* Cor do texto digitado */
+    margin-bottom: 1rem;
+}
+.meow__buy_title_buttons {
+    display: flex;
+}
+.meow__buy_desktop_buttons button,
+.meow__claim_title_buttons button {
+    font-family: var(--font-family);
+    width: 115px;
+    height: 31px;
+    background-color: #D862FF;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+
+
+.meow__buy_mobile_buttons button {
+    font-family: var(--font-family);
+    width: 90px;
+    height: 31px;
+    background-color: #D862FF;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.mobile-only2{
+    margin-left: 1rem;
+}
+
+
+.light-mode .meowl_navegation_earlier,
+.light-mode .meowl_navegation_price,
+.light-mode .meowl_navegation_token_info_container,
+.light-mode .meowl_navegation_BuyMint,
+.light-mode .meowl_buy_claim_box {
+    background-color: #ffff;
+}
+
+.meowl_navegation_earlier_content {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.meowl_vanegation_earlier_title {
+    display: flex;
+}
+
+.meowl_navegation_pools_icon {
+    margin-left: 1rem;
+    width: 20px;
+    height: 22px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.meowl_vanegation_earlier_title h2 {
+    margin-left: 0.8rem;
+    font-size: 1.3rem;
+}
+.meowl_navegation_earlier_content h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+.meowl_navegation_earlier_content p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #0000009f;
+    font-weight: bold;
+    
+}
+
+.meowl_navegation_description {
+    margin-top: 2rem;
+    max-width: 770px;
+}
+.meowl_navegation_description p {
+    margin-top: 2rem;
+}
+
+.light-mode .meowl_navegation_earlier_content p {
+    color:  #000000;
+}
+.light-mode .meowl_navegation_earlier_content h3{
+   color: #00000080;
+}
+
+.meowl_navegation_contentSecond{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.meowl_navegation_contentThird_buy{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.meowl_navegation_card_container {
+    width: 525px;
+    height: 512px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-left: 4rem;
+    
+}
+
+.meowl_navegation_Third_card {
+    width: 763px;
+    height: 805Px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    
+}
+.meowl_navegation_Third_card_division {
+    margin-bottom: 1.2rem;
+    width:96.5%;
+    height: 1px;
+    background-color: #ffffff7a;
+
+}
+
+.meowl_naegation_third_first_div {
+    display: flex;
+}
+
+.light-mode .meowl_navegation_Third_card_division {
+    background-color: #0000007a;
+}
+
+.light-mode .meowl_navegation_card_container,
+.light-mode .meowl_navegation_Third_card {
+    background-color: #ffff;
+}
+
+.meowl_teste23 {
+    margin-top: 2rem;
+}
+.light-mode .meowl_teste23 h3 {
+    color: #00000083 ;
+}
+
+.meowl_navegation_card_title {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.meowl_navegation_card_title h2 {
+    
+    font-size: 1.3rem;
+}
+.meowl_navegation_funding_container {
+    margin-top: 1rem;
+    display: flex;
+    gap: 13.5rem;
+}
+.meowl_navegation_card_container h3,
+.meowl_navegation_card_title h3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+.light-mode .meowl_navegation_card_container h3 {
+    color: #000000;  
+}
+
+.meowl_teste1 {
+    margin-top: 2rem;
+}
+.meowl_navegation_funding_numbers {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    overflow: hidden; /* Esconde qualquer estouro */
+    max-width: 100%; /* Garante que o container não estoure */
+}
+
+.meowl_navegation_funding_numbers p,
+.meowl_navegation_funding_data1 p,
+.meowl_navegation_funding_data2 p,
+.meowl_navegation_funding_data3 p {
+    margin-right: 1.8rem;
+}
+
+
+.meowl_navegation_funding_loading {
+    margin-top: 1.3rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    height: 14px;
+    background-color: #00000088; /* Cor do fundo da barra de progresso */
+    border-radius: 8px; /* Canto arredondado */
+    position: relative; /* Necessário para posicionar a barra de progresso dentro */
+}
+
+.progress-bar {
+    margin-top: 1.3rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    height: 14px;
+    background-color: #064c5caf; /* Cor do fundo da barra de progresso */
+    border-radius: 8px; /* Canto arredondado */
+    position: relative; /* Garante que a barra de progresso fique acima do fundo */
+}
+
+.meowl_navegation_title_info h2 {
+    margin-bottom: 1rem;
+   
+}
+
+.meowl_navegation_funding_division {
+    
+    margin-bottom: 1.2rem;
+    width: 95%;
+    height: 1px;
+    background-color: #000000b5;
+
+}
+
+
+
+.light-mode .meowl_navegation_funding_division,
+.light-mode .meowl_navegation_funding_division2,
+.light-mode .meowl_navegation_funding_loading {
+    background-color: #0000007a;
+}
+
+.meowl_navegation_funding_data1,
+.meowl_navegation_funding_data2,
+.meowl_navegation_funding_data3 {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    overflow: hidden; /* Esconde qualquer estouro */
+    max-width: 100%; /* Garante que o container não estoure */
+}
+
+
+.meowl_navegation_funding_data p {
+    margin: 0; /* Remove margens padrão */
+    padding: 0;
+    text-align: center; /* Centraliza o texto */
+    width: 80px; /* Define uma largura fixa para os parágrafos */
+}
+
+/* responsive  1024px --------------------------------
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+-----------------------------------------------------*/
+
+@media screen and (max-width: 1025px) {
+    .banner_project {
+        max-width: 520px;
+    }
+    .meowl_navegation_paragraph {
+        gap: 1.5rem;
+       
+    }
+    .meowl_navegation_box {
+        width: 520px;
+        height: 110px;
+    
+    }
+    .meowl_navegation_box p {
+        width: 430px;;
+        margin-left: 1rem;
+    }
+    .meowl_buy_claim_box {
+        width: 520px;
+        height: 210px;
+    
+    }
+    .meowl_buy_claim_box p {
+        margin-left: 4rem;
+        margin-top: 5.5rem;
+    }
+    .meowl_navegation_earlier {
+        width: 245px;
+        height: 260px;
+    
+    }
+    .meowl_navegation_price {
+        width: 157px;
+        height: 100px;
+        
+    }
+    .meowl_navegation_BuyMint {
+        width: 245px;
+        height: 279px;
+        
+    }
+    .meowl_navegation_user_container h3 {
+    font-size: 0.8rem;
+
+    color: #000000;
+    font-weight: bold;
+    }
+    
+    .meowl_navegation_user_container p {
+        font-size: 0.7rem ;
+    }
+
+    .meowl_navegation_card_container {
+        width: 365px;
+        height: 512px;
+        margin-left: 2.5rem;
+        
+    }
+
+    .meowl_navegation_funding_container {
+        margin-top: 1rem;
+        display: flex;
+        gap: 9.5rem;
+    }
+
+    .meowl_navegation_Third_card {
+        width: 520px;
+        height: 815Px;
+        
+        border-radius: 8px;
+        
+    }
+    
+}
+
+/* responsive  850px --------------------------------
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+-----------------------------------------------------*/
+
+@media screen and (max-width: 850px) {
+    .meowl_navegation_content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+    .banner_project {
+        max-width: 95%;
+    }
+    .meowl_navegation_paragraph {
+        gap: 3rem;
+       
+    }
+    .meowl_navegation_box {
+        width: 95%;
+        height: 110px;
+    
+    }
+    .meowl_buy_claim_box {
+        width: 95%;
+        height: 210px;
+    
+    }
+    .meowl_buy_claim_box p {
+        margin-left: 4rem;
+        margin-top: 5.5rem;
+    }
+    .meowl_navegation_description {
+        margin-top: 2rem;
+        max-width: 95%;
+    }
+    .meowl_navegation_box p {
+        width: 85%;
+        margin-left: 1rem;
+    }
+    .meowl_navegation_earlier {
+        width: 310px;
+        height: 260px;
+    
+    }
+    .meowl_navegation_price {
+        width: 190px;
+        height: 100px;
+        
+    }
+    .meowl_navegation_BuyMint {
+        width: 245px;
+        height: 279px;
+        
+    }
+    .meowl_navegation_user_container h3 {
+    font-size: 0.8rem;
+
+    color: #000000;
+    font-weight: bold;
+    }
+    
+    .meowl_navegation_user_container p {
+        font-size: 0.7rem ;
+    }
+
+    .meowl_navegation_card_container {
+        width: 95%;
+        height: 512px;
+        margin-left: 0rem;
+        margin-top: 2rem;
+        
+    }
+
+    .meowl_navegation_funding_container {
+        margin-top: 1rem;
+        display: flex;
+        gap: 24em;
+    }
+
+    .meowl_navegation_token_info_container {
+        width: 650px;
+        height: 285px;
+        
+        
+    }
+
+    .meowl_navegation_Third_card {
+        width: 95%;
+        height: 810Px;
+        border-radius: 8px;
+        
+    }
+    
+}
+
+/* responsive  500px --------------------------------
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+-----------------------------------------------------*/
+
+@media screen and (max-width: 500px) {
+
+    .meowl_navegation_container{
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .meowl_navegation_content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+    .banner_project {
+        max-width: 95%;
+    }
+    .meowl_navegation_paragraph {
+        gap: 0.5rem;
+       font-size: 0.75rem;
+    }
+    .meowl_navegation_box {
+        width: 95%;
+        height: 145px;
+    
+    }
+
+    .meowl_buy_claim_box p {
+        margin-left: 1rem;
+        margin-top: 5.5rem;
+    }
+    .meowl_navegation_description {
+        margin-top: 2rem;
+        max-width: 95%;
+    }
+    .meowl_navegation_box p {
+        width: 75%;
+        margin-left: 1rem;
+    }
+    .meowl_navegation_pools_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    
+    }
+    .meowl_navegation_earlier {
+        width: 95%;
+        height: 260px;
+    
+    }
+    .meowl_navegation_tokenInfo_container {
+        display: flex;
+        gap: 1rem;
+    
+    }
+    .meowl_navegation_price {
+        width: 100px;
+        height: 115px;
+        
+    }
+    .meowl_navegation_BuyMint {
+        width: 95%;
+        height: 279px;
+        
+    }
+    .meowl_navegation_user_container h3 {
+    font-size: 0.8rem;
+
+    color: #000000;
+    font-weight: bold;
+    }
+    
+    .meowl_navegation_user_container p {
+        font-size: 0.7rem ;
+    }
+
+    .meowl_navegation_card_container {
+        width: 95%;
+        height: 512px;
+        margin-left: 0rem;
+        margin-top: 2rem;
+        
+    }
+
+    .meowl_navegation_funding_container {
+        margin-top: 1rem;
+        display: flex;
+        gap: 24em;
+    }
+
+    .meowl_navegation_token_info_container {
+        width: 95%;
+        height: 285px;
+        
+        
+    }
+
+    .meowl_navegation_Third_card {
+        width: 95%;
+        height: 820Px;
+        border-radius: 8px;
+        
+    }
+    
+}
+
+/* responsive  376px --------------------------------
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+-----------------------------------------------------*/
+
+@media screen and (max-width: 376px) {
+
+    .meowl_navegation_container{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+  
+    .meowl_navegation_paragraph {
+        gap: 0.5rem;
+       font-size: 0.65rem;
+    }
+    .meowl_navegation_box {
+        width: 95%;
+        height: 145px;
+    
+    }
+   
+    .meowl_navegation_box p {
+        width: 75%;
+        margin-left: 1rem;
+    }
+   
+    .meowl_navegation_price {
+        width: 100px;
+        height: 115px;
+        
+    }
+   
+    
+}
+
+/* responsive  320px --------------------------------
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+-----------------------------------------------------*/
+
+@media screen and (max-width: 325px) {
+
+    .meowl_navegation_container{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+  
+    .meowl_navegation_paragraph {
+        gap: 0.5rem;
+       font-size: 0.55rem;
+    }
+    .meowl_navegation_box {
+        width: 95%;
+        height: 165px;
+    
+    }
+   
+    .meowl_navegation_box p {
+        width: 75%;
+        margin-left: 1rem;
+    }
+   
+    .meowl_navegation_price {
+        width: 100px;
+        height: 115px;
+        
+    }
+    .meowl_navegation_Third_card {
+        
+        height: 860Px;
+        
+        
+    }
+   
+    
+}

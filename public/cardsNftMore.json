@@ -1,0 +1,130 @@
+{
+    "nfts": [
+      {
+        "id": 1,
+        "name": "Meowl Reaper Gala",
+        "weight": "Weight #3",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/10.svg",
+        "bg_color": "bg_gradient_12",
+        "weapon": "meowl_axe",
+        "title": "meowl_verse_dark_grey"
+        
+        
+      },
+      {
+        "id": 2,
+        "name": "Meowl Reaper lumberjack",
+        "weight": "Weight #1",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/12.svg",
+        "bg_color": "bg_gradient_5",
+        "weapon": "meowl_axe",
+        "title": "meowl_verse_dark_grey"
+      },
+      {
+        "id": 3,
+        "name": "Meowl Reaper Bonnet",
+        "weight": "Weight #12",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/15.svg",
+        "bg_color": "bg_gradient_8",
+        "weapon": "meowl_axe",
+        "title": "meowl_verse_black"
+      },
+      {
+        "id": 4,
+        "name": "Meowl Reaper Garfield",
+        "weight": "Weight #17",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/16.svg",
+        "bg_color": "bg_gradient_18",
+        "weapon": "meowl_axe",
+        "title": "meowl_verse_light_gray"
+      },
+      {
+        "id": 9,
+        "name": "Meowl S. Suit Hat Pistol",
+        "weight": "Weight #11",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9788.svg",
+        "bg_color": "bg_rare_18",
+        "weapon": "meowl_blaster",
+        "title": "meowl_verse_white"
+      },
+      {
+        "id": 6,
+        "name": "Meowl Shooter Army",
+        "weight": "Weight #15",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9280.svg",
+        "bg_color": "bg_rare_14",
+        "weapon": "meowl_blaster",
+        "title": "meowl_verse_white"
+        
+        
+      },
+      {
+        "id": 7,
+        "name": "Meowl Shooter Suit Pistol",
+        "weight": "Weight #12",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9279.svg",
+        "bg_color": "bg_rare_13",
+        "weapon": "meowl_blaster",
+        "title": "meowl_verse_dark_grey"
+      },
+      {
+        "id": 8,
+        "name": "Meowl S. Machinegun",
+        "weight": "Weight #8",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9770.svg",
+        "bg_color": "bg_rare_16",
+        "weapon": "meowl_blaster",
+        "title": "meowl_verse_white"
+      },
+      {
+        "id": 9,
+        "name": "Meowl King Slim",
+        "weight": "Weight #3",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9878.svg",
+        "bg_color": "epic_bg_bronze",
+        "weapon": "meowl_king_trident",
+        "title": "meowl_verse_dark_grey"
+      },
+      {
+        "id": 10,
+        "name": "Meowl King Black",
+        "weight": "Weight #6",
+        "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+        "backgroubdImage": "/nfts/9977.svg",
+        "bg_color": "epic_bg_pink",
+        "weapon": "meowl_king_trident",
+        "title": "meowl_verse_light_gray"
+    },
+    {
+      "id": 11,
+      "name": "Meowl K. Pink Kingdom",
+      "weight": "Weight #10",
+      "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+      "backgroubdImage": "/nfts/9987.svg",
+      "bg_color": "epic_bg_bronze",
+      "weapon": "meowl_king_trident",
+      "title": "meowl_verse_light_gray"
+    },
+    {
+      "id": 12,
+      "name": "Meowl K. Ocean Kingdom",
+      "weight": "Weight #10",
+      "description": "Spin the MeowlWheel and win big! Bet USDC or Meowl tokens for a chance to win amazing prizes.",
+      "backgroubdImage": "/nfts/10000.svg",
+      "bg_color": "epic_bg_metal",
+      "weapon": "meowl_king_trident",
+      "title": "meowl_verse_light_gray"
+    }
+
+     
+    ]
+  }
