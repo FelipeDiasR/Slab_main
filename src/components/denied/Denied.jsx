@@ -1,6 +1,6 @@
 // src/components/LoadingPopup.jsx
 import React from 'react';
-import './denied.css'; // Arquivo CSS para estilização
+import '../approved/approved.css'; // Arquivo CSS para estilização
 import denied from '../../img/icons/denied.svg'
 
 
@@ -8,10 +8,10 @@ import denied from '../../img/icons/denied.svg'
 function Denied () {
 
   return (
-    <div className="denied-popup">
-      <div className="denied-popup-content">
+    <div className="approved-popup">
+      <div className="approved-popup-content">
         <img src={denied} alt='denied' />
-        <p> The Transaction has been denied..</p>
+        <p> A transação falhou, entre<br/> em contato com a Slab.</p>
       </div>
     </div>
   );

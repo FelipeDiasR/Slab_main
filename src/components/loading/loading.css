@@ -3,7 +3,7 @@
 .loading-popup {
   width: 17%;
   height: 300px;
-  background: linear-gradient(90deg, rgba(86, 78, 114, 0.404) 0%, rgba(47, 24, 110, 0.966) 50%, rgba(43, 9, 138, 0.562) 100%);
+  background: rgb(74, 97, 74);
   padding: 20px;
   color: #ffff;
   border-radius: 10px;

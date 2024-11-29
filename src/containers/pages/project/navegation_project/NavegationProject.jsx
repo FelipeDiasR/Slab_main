@@ -78,7 +78,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
       alreadyCaptured: null
     });
     
-    const alreadyCaptured = (parseFloat(fundraising.alreadyCaptured / (10 ** 18)) || 0)
+    const alreadyCapturedForm = (parseFloat(fundraising.alreadyCaptured / (10 ** 18)) || 0)
     .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     const  toneladasGol = (parseFloat(fundraising.totalToRaise / (10 ** 18)) || 0)
     .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -629,16 +629,13 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
 
      
         const calculateProgressPercentage = () => {
-          // Converta alreadyCaptured para número
-          const captured = Number(alreadyCaptured);
-        
-          // Limpe e converta total_raise para número
-          const cleanedTotalRaise = total_raise.replace(/[$,]/g, ''); // Remove símbolos de dólar e vírgulas
-          const total = Number(cleanedTotalRaise);
-        
+          // Substituir vírgulas por pontos e converter para número
+          const captured = Number(alreadyCapturedForm.replace(',', '.'));
+          const total = Number(toneladasGol.replace(',', '.'));
+          
           // Log para verificar os valores convertidos
           console.log('Valores convertidos:', { captured, total });
-        
+          console.log('aque é o testeeee:', alreadyCapturedForm)
           if (captured > 0 && total > 0) {
             const percentage = (captured / total) * 100;
             setProgressPercentage(percentage);
@@ -651,7 +648,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
 
         useEffect(() => {
           calculateProgressPercentage();
-        }, [alreadyCaptured, total_raise]); // Dependências para atualizar a porcentagem quando necessário
+        }, [ total_raise]); // Dependências para atualizar a porcentagem quando necessário
     
 
 
@@ -962,16 +959,17 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 </div>
                                 <div className='meowl_teste1'>
                                     <div className='meowl_navegation_funding_numbers'>
-                                    <p>{alreadyCaptured}</p>
+                                    <p>{alreadyCapturedForm}</p>
                                         <p>{toneladasGol}</p>
                                     </div>
                                     
                                       <div className='meowl_navegation_funding_loading'>
                                       <div 
                                         className='progress-bar'
-                                        style={{ width: `${progressPercentage}%` }} // Corrigido para usar crase e notação de interpolação correta
+                                        style={{ width: `${progressPercentage}%` }}
+                                        // Corrigido para usar crase e notação de interpolação correta
                                       />
-                                      </div>
+                                      </div> 
                                     
                                     <div className='meowl_navegation_title_info'>
                                         <h2>Info</h2>

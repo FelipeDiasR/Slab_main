@@ -14,16 +14,14 @@ import { ThemeContext } from '../themecontext/ThemeContext';
 const Menu = ({ toggleTheme, isLigmode, closeMenu }) => (
   <ul>
     <li>
-      <Link to="/nft" onClick={closeMenu}>NFT Collection</Link>
+      <Link to="/launchpad">Lançamentos</Link>
     </li>
     <li>
       <a href="https://meowl-1.gitbook.io/meowlverse-whitepaper/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-        Whitepaper
+      contato
       </a>
     </li>
-    <li>
-      <Link to="/launchpad" className="link" onClick={closeMenu}>Launchpad</Link>
-    </li>
+    
     <li>
       {/* Botão de alternância de tema adicionado aqui */}
       <button onClick={toggleTheme} className="color-mode-toggle">
@@ -53,7 +51,7 @@ const Navbar = () => {
       <div className='meow__navbar_whitepaper_wallet'>
         <Link to="/launchpad">Lançamentos</Link>
         <a href="https://forms.gle/niLDyFN1MhRRySmn9" target="_blank" rel="noopener noreferrer">
-        Tokenize
+        contato
         </a>
         {account ? (
           <button>Connected: {account.slice(0, 6)}...{account.slice(-4)}</button>
