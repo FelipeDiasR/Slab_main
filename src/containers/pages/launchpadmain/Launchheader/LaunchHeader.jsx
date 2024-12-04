@@ -36,7 +36,8 @@ const LaunchHeader = () => {
                 </div>
                 <div className='meowl-upcoming_titles'>
                     <h1> Próximas Tokenizações </h1>
-                    <p> Explore as CPRS que estão sendo tokenizadas na Slab. </p>
+                    <p> Descubra as áreas Brasileiras onde estão sendo criados os ativos de biodiversidade.
+                    </p>
                 </div>
             </div>
         </div>

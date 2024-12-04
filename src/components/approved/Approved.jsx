@@ -18,4 +18,4 @@ function Approved () {
   );
 };
 
-export default Approved;
+export default Approved; 

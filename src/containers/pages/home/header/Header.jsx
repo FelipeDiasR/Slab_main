@@ -20,9 +20,15 @@ const Header = () => {
             
           </h1>
           <p>
-            Na SlaB Assets, tokenizamos ativos de biodiversidade com blockchain, garantindo segurança
-            e rastreabilidade. Com TBio (Token de Biodiversidade), promovemos a sustentabilidade, 
-            preservando ecossistemas e contribuindo para a descarbonização global.
+          A SlaB Assets é pioneira na tokenização de ativos de biodiversidade, promovendo
+          a conservação ambiental . Os ativos de biodiversidade, tem como unidade métrica
+          o CO2,  o tCO2eq. (tonelada de dióxido de carbono equivalente),dentre outros 
+          gases do efeito estufa presentes em toda biomassa, além de outros fatores 
+          determinantes de um ecossistema, do subsolo a atmosfera. Oferecemos uma 
+          plataforma em Web3 segura e transparente para aqueles que desejam investir no 
+          futuro do planeta, preservando nossos ecossistemas e gerando impacto positivo.
+
+
           </p>
           <div className="meow__header_buttons">
             <div className="meow__header_buttons-button1">

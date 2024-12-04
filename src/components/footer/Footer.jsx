@@ -19,7 +19,7 @@ const Footer = () => {
       <div className='meow__footer_links'>
         <div className='meow__footer-logo'>
         <Link to="/"><img src={isLigmode ? logotipo_white_block : logotipo_positive_block} alt='logotipo' /></Link>
-          <h3>Blockchain Tokenization.</h3>
+          <h3>Tokenização de RWA.</h3>
         </div>
         {/*
         <div className='meow__footer_firstcolun'>

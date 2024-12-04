@@ -324,7 +324,7 @@
 
 .meowl_navegation_Third_card {
     width: 763px;
-    height: 805Px;
+    height: 850Px;
     background-color: #ffffff;
     border-radius: 8px;
     
@@ -505,7 +505,7 @@
     }
     .meowl_navegation_BuyMint {
         width: 245px;
-        height: 279px;
+        height: 325px;
         
     }
     .meowl_navegation_user_container h3 {
@@ -534,7 +534,7 @@
 
     .meowl_navegation_Third_card {
         width: 520px;
-        height: 815Px;
+        height: 875Px;
         
         border-radius: 8px;
         
@@ -595,7 +595,7 @@
         
     }
     .meowl_navegation_BuyMint {
-        width: 245px;
+        width: 310px;
         height: 279px;
         
     }
@@ -633,7 +633,7 @@
 
     .meowl_navegation_Third_card {
         width: 95%;
-        height: 810Px;
+        
         border-radius: 8px;
         
     }
@@ -743,7 +743,7 @@
 
     .meowl_navegation_Third_card {
         width: 95%;
-        height: 820Px;
+        height: 875Px;
         border-radius: 8px;
         
     }
@@ -757,6 +757,8 @@
 -----------------------------------------------------*/
 
 @media screen and (max-width: 376px) {
+
+  
 
     .meowl_navegation_container{
         margin-left: 1rem;
@@ -783,8 +785,13 @@
         height: 115px;
         
     }
+    .meowl_navegation_Third_card {
+        
+        height: 950Px;
+        
+        
+    }
    
-    
 }
 
 /* responsive  320px --------------------------------
@@ -822,10 +829,14 @@
     }
     .meowl_navegation_Third_card {
         
-        height: 860Px;
+        height: 1050Px;
         
         
     }
+    .meowl_navegation_pools_icon {
+        margin-right: 1rem;
+    }
+    
    
     
 }

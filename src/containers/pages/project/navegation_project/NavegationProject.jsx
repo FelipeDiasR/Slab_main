@@ -667,7 +667,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                          onClick={() => handleOpenPopup(popupData.meowlEarlier.title, popupData.meowlEarlier.content)} />
                                         
                                     </div>
-                                    <h3>Data de abertura</h3>
+                                    <h3>Lançamento</h3>
                                     <p>{earlier_open_time}</p>
                                     <h3>Quantidade de Tokens</h3>
                                     <p>{earlier_Supply_offerd} {ticker}</p>
@@ -678,7 +678,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <div className='meowl_navegation_earlier_content'>
                                     <div className='meowl_vanegation_earlier_title'>
                                         <img src={isLigmode ? logo_icon : logo_icon} alt='logotipo' /> 
-                                        <h2>CPR</h2>
+                                        <h2>CPR-Verde</h2>
                                         <IoMdInformationCircleOutline className='meowl_navegation_pools_icon'
                                          onClick={() => handleOpenPopup(popupData.openMeowl.title, popupData.openMeowl.content)} />
                                     </div>
@@ -780,7 +780,8 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                       <div className='meowl_buy_title1'>
                         <h2>Comprar</h2>         
                       </div>
-                      <p>Para realizar compras, você deve ter {buy_with} na rede Polygon</p>
+                      <p>Para realizar compras, você deve ter {buy_with} na rede Polygon. 1 Token representa 1 tCO2eq.
+                      </p>
                       <div className='meowl_buy_title_input'>
                         
                         <input

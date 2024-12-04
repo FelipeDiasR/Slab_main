@@ -21,16 +21,20 @@ const Brand = () => {
             <Link to="/launchpad"><img src={Foguete} alt="image2" /></Link>
           </div>
           <div className='meow__brand_lauchpad'>
-            <Link to="/launchpad"><h2>Ativos de Biodiversidade</h2></Link>
-            <Link to="/launchpad"> 
+             <h2>Ativos de Biodiversidade</h2>
+            
               <p>
-                Conheça o TBio (Token de Biodiversidade), nosso token de biodiversidade lastreado em CPRV
-                e registrado no ambiente B3 <br/>(Brasil Bolsa Balcão). Representando o valor da conservação
-                florestal, o TBio evita riscos de greenwashing, assegurando que as
-                áreas já prestaram serviços ecossistêmicos como o armazenamento de gases do efeito estufa e o equilíbrio ecológico. Certificado e regulamentado, o TBio
-                promove a preservação ambiental enquanto gera valor financeiro.
+              Conheça o Tbio, um token de biodiversidade lastreado em CPR-Verde e registrado em
+              ambiente B3 (Brasil Bols Balcão). Capiturando valor da conservação florestal, o TBio 
+              está em conformidade com o que determina a Lei nº 13.986/2020 , regulamentada pelo 
+              Decreto nº 10.828/ 2021 , que introduziu na legislação Brasileira a possibilidade da 
+              emissão de Cédula de Produto Rural lastreadas em ativos florestais/ambientais 
+              (Ativos de Biodiversidade), normas e regras dos organismos nacionais e internacionais 
+              como IPCC, WRI, GRI, GHG Protocol, ICR/CORSIA, ISO séries 14064 e 6000, ABNT NBR ISO 
+              14064:2007-2, além das fórmulas de quantificação de CO2 e tCO2eq., metrificações, 
+              desvio padrão e índices seguindo as normas, regras e padrões acadêmicos.
               </p>
-            </Link>
+          
           </div>
         </div>
         <div className='meow__brand_content_gaming'>
@@ -39,9 +43,10 @@ const Brand = () => {
             <Link to="/game"> 
               <p>
                 Utilizamos tecnologia de ponta para tokenizar ativos de biodiversidade, 
-                garantindo negociação segura e rastreável no blockchain. Essa inovação permite 
-                criar unidades digitais fracionadas, facilitando sua comercialização global com 
-                total transparência, segurança e rastreamento do impacto positivo de cada investimento.
+                garantindo negociação segura e rastreável no blockchain. Essa inovação 
+                permite criar unidades digitais fracionadas, facilitando sua comercialização 
+                global com total transparência, segurança e rastreamento do impacto 
+                positivo de cada investimento.
               </p>
             </Link>
           </div>

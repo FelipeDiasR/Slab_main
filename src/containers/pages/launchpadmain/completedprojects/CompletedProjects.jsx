@@ -24,7 +24,7 @@
           <>
             <h3> Preço do Token</h3>
             <p> $ {token_price} </p>
-            <h3> Data inicial</h3>
+            <h3> Lançamento</h3>
             <p> {round_start_on}</p>
             <h3> Toneladas em oferta</h3>
             <p>  {total_raise}</p>

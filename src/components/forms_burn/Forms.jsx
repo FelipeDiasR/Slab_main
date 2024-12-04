@@ -44,7 +44,7 @@ const Forms = () => {
       // Enviando os dados para o Firestore
       await addDoc(collection(db, "CprBurn"), formData);
       setSuccessMessage(
-        "Processo iniciado! Um representante Slab entrará em contato, e seu selo será emitido em até 48h."
+        "Processo iniciado! Um representante Slab entrará em contato, seu Selo ou Certificado Verde será emitido em breve."
       );
       setFormData({ name: "", email: "", phone: "", wallet: "", message: "" });
     } catch (error) {
@@ -58,7 +58,7 @@ const Forms = () => {
     <div className="forms_burn">
       <div className="forms_burn_background">
         <div className="forms_burn_content">
-          <h1>Exercer CPR / Realizar saque</h1>
+          <h1>Exercer Benefícios do TBIO / Realizar saque</h1>
           <div className="forms_burn_division"></div>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Nome Completo (obrigatório)</label>
