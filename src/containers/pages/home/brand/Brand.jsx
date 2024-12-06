@@ -25,7 +25,7 @@ const Brand = () => {
             
               <p>
               Conheça o Tbio, um token de biodiversidade lastreado em CPR-Verde e registrado em
-              ambiente B3 (Brasil Bols Balcão). Capiturando valor da conservação florestal, o TBio 
+              ambiente B3 (Brasil Bolsa Balcão). Capiturando valor da conservação florestal, o TBio 
               está em conformidade com o que determina a Lei nº 13.986/2020 , regulamentada pelo 
               Decreto nº 10.828/ 2021 , que introduziu na legislação Brasileira a possibilidade da 
               emissão de Cédula de Produto Rural lastreadas em ativos florestais/ambientais 

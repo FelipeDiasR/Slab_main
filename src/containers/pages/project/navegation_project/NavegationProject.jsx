@@ -46,6 +46,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
         totalPurchased: null,
         tokenBalance: null,
         tokenBurned: null, 
+        totalwithdrawn: null,
         /*claimedAmount: null,
         tokensPerClaim: null,
         numberOfClaims: null,
@@ -78,9 +79,10 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
       alreadyCaptured: null
     });
     
-    const alreadyCapturedForm = (parseFloat(fundraising.alreadyCaptured / (10 ** 18)) || 0)
-    .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    const  toneladasGol = (parseFloat(fundraising.totalToRaise / (10 ** 18)) || 0)
+    const alreadyCapturedForm = (parseFloat((fundraising.alreadyCaptured / (10 ** 18)).toString()) || 0)
+   .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    const toneladasGol = (parseFloat((fundraising.totalToRaise / (10 ** 18)).toString()) || 0)
     .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
     const handleSectionClick = (index) => {
@@ -146,6 +148,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                   totalPurchased: (userData[1] ? (parseFloat(userData[1].toString()) / (10 ** 18)) : 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
                   tokenBalance: (userData[2] ? (parseFloat(userData[2].toString()) / (10 ** 18)) : 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
                   tokenBurned: (userData[3] ? (parseFloat(userData[3].toString()) / (10 ** 18)) : 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
+                  totalwithdrawn: (userData[4] ?(parseFloat(userData[4].toString()) / (10 ** 18)) : 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
                   /*claimedAmount: (userData[2] ? formatAndRound(userData[2]) : 0),
                   numberOfClaims: (userData[3] ? parseInt(userData[3].toString()) : 0),
                   tokensPerClaim: (userData[4] ? formatAndRound(userData[4]) : 0),
@@ -629,15 +632,15 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
 
      
         const calculateProgressPercentage = () => {
-          // Substituir vírgulas por pontos e converter para número
-          const captured = Number(alreadyCapturedForm.replace(',', '.'));
-          const total = Number(toneladasGol.replace(',', '.'));
+          // Manter os valores como BigInt para maior precisão
+          const captured = fundraising.alreadyCaptured || 0n; // 0n é um BigInt zero
+          const total = fundraising.totalToRaise || 0n;  // 0n é um BigInt zero
           
-          // Log para verificar os valores convertidos
           console.log('Valores convertidos:', { captured, total });
-          console.log('aque é o testeeee:', alreadyCapturedForm)
-          if (captured > 0 && total > 0) {
-            const percentage = (captured / total) * 100;
+        
+          if (captured > 0n && total > 0n) {
+            // Cálculo da porcentagem mantendo a precisão com BigInt
+            const percentage = (Number(captured) / Number(total)) * 100;
             setProgressPercentage(percentage);
             console.log('Porcentagem calculada:', percentage);
           } else {
@@ -835,6 +838,10 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                         <div className='meowl_navegation_token_info_data2'>
                           <h3>Total queimado</h3>
                           <p>{userData.tokenBurned ?? 0}</p> 
+                        </div> 
+                        <div className='meowl_navegation_token_info_data2'>
+                          <h3>Saque realizado</h3>
+                          <p>{userData.totalwithdrawn ?? 0}</p> 
                         </div> 
 
                         <p>Obs: Após a compra, seus tokens estarão disponíveis na plataforma Slab. Para 
