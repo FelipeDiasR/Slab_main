@@ -24,8 +24,8 @@ const UpcomingProjects = ({ name, card_background, website,
         <>
           <h3> Preço do Token</h3>
           <p> $ {token_price} </p>
-          <h3> Lançamento</h3>
-          <p> {round_start_on}</p>
+          <h3> Código ISIN</h3>
+          <p> {vesting} </p>
           <h3> Toneladas em oferta</h3>
           <p>  {total_raise}</p>
         </>

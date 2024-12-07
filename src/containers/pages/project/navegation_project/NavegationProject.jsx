@@ -632,10 +632,17 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
 
      
         const calculateProgressPercentage = () => {
+          // Garantir que fundraising está inicializado
+          if (!fundraising.alreadyCaptured || !fundraising.totalToRaise) {
+            console.log('Dados de fundraising ainda não carregados');
+            setProgressPercentage(0);
+            return;
+          }
+        
           // Manter os valores como BigInt para maior precisão
-          const captured = fundraising.alreadyCaptured || 0n; // 0n é um BigInt zero
-          const total = fundraising.totalToRaise || 0n;  // 0n é um BigInt zero
-          
+          const captured = fundraising.alreadyCaptured || 0n;
+          const total = fundraising.totalToRaise || 0n;
+        
           console.log('Valores convertidos:', { captured, total });
         
           if (captured > 0n && total > 0n) {
@@ -648,10 +655,11 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
             setProgressPercentage(0);
           }
         };
-
+        
+        // Chamar o cálculo inicial no `useEffect`
         useEffect(() => {
           calculateProgressPercentage();
-        }, [ total_raise]); // Dependências para atualizar a porcentagem quando necessário
+        }, [fundraising]);
     
 
 
@@ -933,7 +941,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <div className='meowl_navegation_box_content'>
                                     <LuAlertCircle className='meowl_meowl_navegation_box_icon' />
                                         <p>
-                                          Mude a rede usando o botão abaixo, para ser possível ver as informações to doken.
+                                          Mude a rede usando o botão abaixo, para ser possível ver as informações to do token.
                                         </p>
                                       
                                 </div>
