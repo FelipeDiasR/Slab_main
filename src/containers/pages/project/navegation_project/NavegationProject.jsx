@@ -675,7 +675,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                         <img src={isLigmode ? logo_icon : logo_icon} alt='logotipo' /> 
                                         <h2>Distribuição</h2>
                                         <IoMdInformationCircleOutline className='meowl_navegation_pools_icon'
-                                         onClick={() => handleOpenPopup(popupData.meowlEarlier.title, popupData.meowlEarlier.content)} />
+                                         onClick={() => handleOpenPopup(popupData.slabInfo.title, popupData.slabInfo.content)} />
                                         
                                     </div>
                                     <h3>Lançamento</h3>
@@ -691,7 +691,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                         <img src={isLigmode ? logo_icon : logo_icon} alt='logotipo' /> 
                                         <h2>CPR-Verde</h2>
                                         <IoMdInformationCircleOutline className='meowl_navegation_pools_icon'
-                                         onClick={() => handleOpenPopup(popupData.openMeowl.title, popupData.openMeowl.content)} />
+                                         onClick={() => handleOpenPopup(popupData.slabInfo2.title, popupData.slabInfo2.content)} />
                                     </div>
                                     <h3>Data de emissão</h3> 
                                     <p>{open_open_time}</p>
@@ -1029,7 +1029,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                             <IoMdInformationCircleOutline
                             className='meowl_navegation_pools_icon'
                             onClick={() =>
-                                handleOpenPopup(popupData.Claimsection.title, popupData.Claimsection.content)
+                                handleOpenPopup(popupData.TransparencyPainel.title, popupData.TransparencyPainel.content)
                             }
                             />
                             
