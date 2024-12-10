@@ -55,7 +55,7 @@ const Footer = () => {
           <p>©2021 Bloxifi. All rights reserved.</p>
           <ul className='meow__footer_sociallist'>
             <li>
-            <a href="https://x.com/MeowlVerse" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/slab_assets?igsh=MXF0aXIzOTUwazZmbQ%3D%3D&utm_source=qr " target="_blank" rel="noopener noreferrer">
               <AiFillInstagram />
               </a>
             </li>
