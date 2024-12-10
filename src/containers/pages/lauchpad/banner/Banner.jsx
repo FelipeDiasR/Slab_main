@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 import ProjectLogo from '../../../../img/assets/logos/slab_greenlogo.svg';
 
+
+
 //css
 import './banner.css';
 import { ThemeContext } from '../../../../components/themecontext/ThemeContext';
