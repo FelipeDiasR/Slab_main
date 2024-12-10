@@ -225,7 +225,9 @@
     margin-top: 1rem;
 }
 
-
+.meow__buy_mobile_buttons{
+    display: flex;
+}
 
 .meow__buy_mobile_buttons button {
     font-family: var(--font-family);
@@ -238,8 +240,8 @@
     margin-top: 1rem;
 }
 
-.mobile-only2{
-    margin-left: 1rem;
+.mobile-only{
+    margin-left: 0.5rem;
 }
 
 
@@ -706,7 +708,7 @@
     }
     .meowl_navegation_BuyMint {
         width: 95%;
-        height: 300px;
+        height: 335px;
         
     }
     .meowl_navegation_user_container h3 {

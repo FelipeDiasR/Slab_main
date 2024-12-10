@@ -241,6 +241,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                     
                     console.log('Rede adicionada e trocada com sucesso!');
                     fetchUserData();
+                    fetchFundraisingData();
                     
                   } catch (addError) {
                     console.error('Erro ao adicionar a rede:', addError);
@@ -810,17 +811,33 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                           placeholder={buy_with}
                         />
                         <div className='meow__buy_title_buttons'>
-                          <div className='meow__buy_desktop_buttons'>
-                            <button className='desktop-only' onClick={aprove}> 
-                            Comprar
-                            </button>
-                          </div>
-                          <div className='meow__buy_mobile_buttons'>
-                          <button className='mobile-only' disabled={!account || !amountBlockchain} onClick={approveTokens}> Aprovar </button>
-                          {/*<button className='mobile-only2' disabled={!account || !amountBlockchain} onClick={buyTokens}> Comprar </button>*/}
-                          </div>
-                          
+                        <div className='meow__buy_desktop_buttons'>
+                          <button 
+                            className='desktop-only' 
+                            onClick={isCorrectNetwork ? aprove : switchNetwork}
+                          >
+                            {isCorrectNetwork ? 'Comprar' : 'Mudar de Rede'}
+                          </button>
                         </div>
+                        <div className='meow__buy_mobile_buttons'>
+                          
+                          <button 
+                            className='mobile-only' 
+                            disabled={!account || !amountBlockchain} 
+                            onClick={isCorrectNetwork ? approveTokens : switchNetwork}
+                          >
+                            {isCorrectNetwork ? 'Aprovar' : 'Mudar de Rede'}
+                            
+                          </button>
+                          <button className='mobile-only' disabled={!account || !amountBlockchain} onClick={buyTokens}> Comprar </button>
+                        </div>
+                        
+                      </div>
+                      {!isCorrectNetwork && (
+                        <p className='network-warning'>
+                          Para realizar compras, você precisa estar na rede correta. Por favor, clique no botão acima para mudar de rede.
+                        </p>
+                        )}
                       </div>
                     </div>
                   </div>
