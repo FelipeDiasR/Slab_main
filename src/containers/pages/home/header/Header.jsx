@@ -32,7 +32,7 @@ const Header = () => {
           </p>
           <div className="meow__header_buttons">
             <div className="meow__header_buttons-button1">
-              <Link to={`/details/01`}>
+              <Link to={`/launchpad`}>
                 <button>Comprar</button>
               </Link>
             </div>
