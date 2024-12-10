@@ -17,7 +17,7 @@ const Menu = ({ toggleTheme, isLigmode, closeMenu }) => (
       <Link to="/launchpad">Lançamentos</Link>
     </li>
     <li>
-      <a href="https://meowl-1.gitbook.io/meowlverse-whitepaper/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+      <a href="https://forms.gle/7GAt424sNFooMk1r7" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
       contato
       </a>
     </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
       <div className='meow__navbar_whitepaper_wallet'>
         <Link to="/launchpad">Lançamentos</Link>
-        <a href="https://forms.gle/niLDyFN1MhRRySmn9" target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.gle/7GAt424sNFooMk1r7" target="_blank" rel="noopener noreferrer">
         contato
         </a>
         {account ? (
