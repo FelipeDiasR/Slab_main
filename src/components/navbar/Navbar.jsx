@@ -50,6 +50,9 @@ const Navbar = () => {
       </div>
       <div className='meow__navbar_whitepaper_wallet'>
         <Link to="/launchpad">Lançamentos</Link>
+        <a href="https://somasustentabilidade.com.br/calculadora/" target="_blank" rel="noopener noreferrer">
+        Calculadora
+        </a>
         <a href="https://forms.gle/7GAt424sNFooMk1r7" target="_blank" rel="noopener noreferrer">
         contato
         </a>
