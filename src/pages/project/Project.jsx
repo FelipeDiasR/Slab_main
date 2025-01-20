@@ -73,6 +73,7 @@ const Project = () => {
                     twitter={project.social_links.twitter}
                     website={project.social_links.website}
                     telegram={project.social_links.telegram}
+                    cardId={project.id}
                 />) : (
                 
                 
@@ -122,6 +123,7 @@ const Project = () => {
               claim_section={project.claim_section}
               total_raise={project.total_raise}
               distribution={project.distribution} 
+              cardId={project.id}
             /> ) : (
             <div className='conditinal_paragrath'>
             <p> Carregando...</p>

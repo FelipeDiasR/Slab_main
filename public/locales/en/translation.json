@@ -66,9 +66,179 @@
 
 "footer": {
   "rwaTokenization": "RWA Tokenization"
+}, 
+
+
+  "launchHeader": {
+    "alert": {
+      "title": "Always ensure the URL is Slab.com",
+      "message": "Be cautious with malicious links"
+    },
+    "welcome": {
+      "title": "Welcome to Slab"
+    },
+    "upcoming": {
+      "title": "Upcoming Tokenizations",
+      "description": "Discover the Brazilian areas where biodiversity assets are being created."
+    }
+  
+},
+
+"upcomingProjects": {
+  "offerings": "Offerings",
+  "description": "Description",
+  "otherInfo": "Other Information",
+  "tokenPrice": "Token Price",
+  "isinCode": "ISIN Code",
+  "tonsAvailable": "Tons Available",
+  "distribution": "Distribution",
+  "active": "Active",
+  "closed": "Closed",
+  "launchDate": "Launch Date",
+  "blockchain": "Built on",
+  "buy": "Buy"
+},
+
+"navegationProject": {
+    
+    "sections": {
+      "tokenSale": "Token Sale",
+      "description": "Description",
+      "tokenInfo": "Token Info",
+      "vesting": "Vesting",
+      "buy": "Buy / Claim"
+    },
+    "titles": {
+      "offerDetails": "Offer Details",
+      "connectWalletInfo": "Connect your wallet to see the token details",
+      "switchNetworkInfo": "Switch the network using the button below to see the token details",
+      "distribution": "Distribution",
+      "launch":"Launch",
+      "tokenAmount":"Token Amount",
+      "cpRVerde": "CPR-Green",
+      "dateOfIssue": "Date of Issue",
+      "quantityOfTokens": "Quantity of Tokens",
+      "ticker": "Ticker",
+      "about":"About",
+      "tokenPrice": "Token Price",
+      "marketPrice": "Market Price",
+      "historicalHigh": "Historical High",
+      "receiving":"Receiving Location",
+      "receiving_platform":"Receiving Platform",
+      "launchPrice": "Launch Price",
+      "tokenSale": "Token Sale",
+      "claimPanel": "Transparency Panel",
+      "mineInformations": "My Information",
+      "dolarinvested": "Total Invested in Dollars",
+      "totalTonsPurchased": "Total Tons Purchased", 
+      "tokenBalance": "Token Balance",
+      "totalBurned": "Total Burned",
+      "withdrawalsDone": "Withdrawals Done",
+      "buyButton": "Buy",
+      "approveButton": "Approve",
+      "tonsOnOffer": "Tons on Offer",
+      "info": "Info",
+      "blockchain": "Blockchain",
+      "purchaseCurrency": "Purchase Currency"
+      
+    },
+    "messages": {
+      "buyWarning":"To make purchases, you must have ",
+      "buyWarning2":"on the Polygon network. 1 Token represents 1 tCO2eq.",
+      "networkWarning": "To make purchases, you need to be on the correct network.",
+      "connectWallet": "Connect your wallet to see the token details",
+      "switchNetwork": "Switch Network",
+      "noOpenBuy": "When the CPR is open, you will be able to buy here.",
+      "amountToBuyHint": "Amount in USDC",
+      "purchaseNote": "Note: After purchase, your tokens will be available on the Slab platform. To withdraw or exercise your rights over biodiversity assets, fill out the form below.",
+      "tokensToReceiveHint": "Tons of tCO2eq",
+      "alreadyCaptured": "Already Captured",
+      "totalToRaise": "Total to be Captured",
+      "networkChangeMessage": "Switch the network using the button below to view the token information."
+    }
+  },
+
+  "projects": {
+    "card1": {
+      "status": "Open",
+      "description": "TBio is a biodiversity asset token backed by CPR-Verde. Combining technology and sustainability, it offers an innovative market that promotes environmental preservation and generates a global positive impact.",
+      "tgeDate": "December 15",
+      "openOpenTime": "September 17, 2024",
+      "completedDescription": "Soma provides a Web3 platform for the issuance and trading of Biodiversity Assets backed by CPR-Verde. This model democratizes access to tCO2eq plus 26 Ecosystem Services, offering a robust platform for environmental preservation and regeneration projects. Focusing on sustainability, Soma enables companies and investors to actively contribute to the reduction of global greenhouse gas (GHG) emissions and to the protection of the environment.<br/><br/>Unlike future promises, the TBIO Token represents the immediate delivery of 27 ecosystem services already provided by nature, eliminating the risks of greenwashing. Through contracts, Soma guarantees the validity and continuous delivery of benefits as long as the tokens are operational and properly certified – ensuring complete security for the buyer.<br/><br/>With each new issuance of CPR-Verde, a batch of X million tokens will be made available on the Slab Assets platform. Each token is equivalent to 1 tCO2eq plus 26 ecosystem services from biodiversity assets, always backed by CPR-Verde, providing traceability, transparency, and a positive impact in the environmental market."
+    },
+    "card2": {
+      "status": "Open",
+      "description": "TBio is a biodiversity asset token backed by CPR-Verde. Combining technology and sustainability, it offers an innovative market that promotes environmental preservation and generates a global positive impact.",
+      "tgeDate": "December 15",
+      "openOpenTime": "August 05, 2024",
+      "completedDescription": "Soma provides a Web3 platform for the issuance and trading of Biodiversity Assets backed by CPR-Verde. This model democratizes access to tCO2eq plus 26 Ecosystem Services, offering a robust platform for environmental preservation and regeneration projects. Focusing on sustainability, Soma enables companies and investors to actively contribute to the reduction of global greenhouse gas (GHG) emissions and to the protection of the environment.<br/><br/>Unlike future promises, the TBIO Token represents the immediate delivery of 27 ecosystem services already provided by nature, eliminating the risks of greenwashing. Through contracts, Soma guarantees the validity and continuous delivery of benefits as long as the tokens are operational and properly certified – ensuring complete security for the buyer.<br/><br/>With each new issuance of CPR-Verde, a batch of X million tokens will be made available on the Slab Assets platform. Each token is equivalent to 1 tCO2eq plus 26 ecosystem services from biodiversity assets, always backed by CPR-Verde, providing traceability, transparency, and a positive impact in the environmental market."
+    }
+  },
+
+
+
+  "launchpadLanding": {
+    "upcoming": {
+      "title": "Soon, we will have tokenized projects available..."
+    },
+    "completed": {
+      "title": "Completed Tokenizations",
+      "subtitle": "Follow all our successfully completed tokenizations.",
+      "empty": "Soon, we will have completed tokenizations available..."
+    }
+  },
+
+  "banner": {
+    "title": "Are you leading an innovative project and ready to transform real and sustainable assets into tokens?",
+    "description": "Get in touch with Slab Assets today to explore tokenization and asset launch opportunities. Connect with our community, one of the most engaged and influential in the tokenization space. Join us and let's shape the future of tokenized assets together!",
+    "button": "Contact us"
+  },
+
+  "headerProject": {
+    "alertTitle": "Always make sure the URL is Slab.com.br",
+    "alertMessage": "Be cautious with malicious links",
+    "welcomeTitle": "Welcome to Slab"
+  },
+
+  "contentProject": {
+    "launchSoon": "Launching soon..",
+    "timeUnits": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
+  },
+
+  "forms": {
+  "titles": {
+    "mainTitle": "Exercise TBIO Benefits / Request Withdrawal"
+  },
+  "labels": {
+    "name": "Full Name (Required)",
+    "email": "Email (Required)",
+    "phone": "Phone/WhatsApp",
+    "wallet": "Wallet Address (Required)",
+    "message": "Leave your information below, and a Slab representative will contact you:"
+  },
+  "placeholders": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "phone": "(XX) XXXXX-XXXX",
+    "wallet": "0xe0e...3f3a0",
+    "message": "Your Message"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "submitting": "Submitting..."
+  },
+  "messages": {
+    "success": "Process initiated! A Slab representative will contact you. Your Seal or Green Certificate will be issued soon."
+  }
 }
 
-
   }
+
+  
 
   

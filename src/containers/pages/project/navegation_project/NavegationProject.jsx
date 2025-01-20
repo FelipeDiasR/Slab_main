@@ -15,6 +15,7 @@ import {usdcAbi} from '../../../../abis/UsdcAbi';
 import './navegationproject.css';
 import { Loading, Approved, Denied, Forms } from '../../../../components';
 import {GeneralPopup} from '../../../../components/index'; 
+import { useTranslation } from 'react-i18next';
 
 
 const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
@@ -23,11 +24,12 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
     smartcontractaddress, smartcontractabi, buy_with, tge_date, fundraise_goal, token_price,
     buil_on, built_on2, stableAddress, bannerproject, total_raise, tge_Availble, token_address,
     claim_Avalible, open_buy, open_subscription, closed, rpc, explorerUrl,
-    chain_name, token_name, symbol, decimals, network, claim_section, distribution}) => {
+    chain_name, token_name, symbol, cardId, network, claim_section, distribution}) => {
     
     const { account, connectWallet } = useWallet();
     const [contract, setContract] = useState(null)
     const { isLigmode } = useContext(ThemeContext);
+    const { t } = useTranslation();
     const [fetchCount, setFetchCount] = useState(0);
     const [rightNetwork, setRightNetwork] = useState(null);
     const [isCorrectNetwork, setIsCorrectNetwork] = useState(true);
@@ -674,14 +676,16 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <div className='meowl_navegation_earlier_content'>
                                     <div className='meowl_vanegation_earlier_title'>
                                         <img src={isLigmode ? logo_icon : logo_icon} alt='logotipo' /> 
-                                        <h2>Distribuição</h2>
+                                        <h2>{t('navegationProject.titles.distribution')}</h2>
                                         <IoMdInformationCircleOutline className='meowl_navegation_pools_icon'
                                          onClick={() => handleOpenPopup(popupData.slabInfo.title, popupData.slabInfo.content)} />
                                         
                                     </div>
-                                    <h3>Lançamento</h3>
-                                    <p>{earlier_open_time}</p>
-                                    <h3>Quantidade de Tokens</h3>
+                                    <h3>{t('navegationProject.titles.launch')}</h3>
+                                    <p>{t(`projects.card${cardId}.tgeDate`)}
+
+                                    </p>
+                                    <h3>{t('navegationProject.titles.tokenAmount')}</h3>
                                     <p>{earlier_Supply_offerd} {ticker}</p>
                                     
                                 </div>
@@ -690,13 +694,13 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <div className='meowl_navegation_earlier_content'>
                                     <div className='meowl_vanegation_earlier_title'>
                                         <img src={isLigmode ? logo_icon : logo_icon} alt='logotipo' /> 
-                                        <h2>CPR-Verde</h2>
+                                        <h2>{t('navegationProject.titles.cpRVerde')}</h2>
                                         <IoMdInformationCircleOutline className='meowl_navegation_pools_icon'
                                          onClick={() => handleOpenPopup(popupData.slabInfo2.title, popupData.slabInfo2.content)} />
                                     </div>
-                                    <h3>Data de emissão</h3> 
-                                    <p>{open_open_time}</p>
-                                    <h3>Ticker</h3>
+                                    <h3>{t('navegationProject.titles.dateOfIssue')}</h3> 
+                                    <p>{t(`projects.card${cardId}.openOpenTime`)}</p>
+                                    <h3>{t('navegationProject.titles.ticker')}</h3>
                                     <p>{ticker}</p>
                                     
                                 </div>
@@ -710,9 +714,10 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
           content: (
             <>
                 <div className='meowl_navegation_description'>
-                    <h3> Sobre {ticker} </h3>
+                    <h3> {t('navegationProject.titles.about')} {ticker} </h3>
                     <p>
-                        {completed_descrption.split('<br/><br/>').map((line, index) => (
+                 
+                        {t(`projects.card${cardId}.completedDescription`).split('<br/><br/>').map((line, index) => (
                            <>
                            {line}
                            <br /><br />
@@ -731,19 +736,19 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                 <div className='meowl_navegation_tokenInfo_container'>
                             <div className='meowl_navegation_price'>
                                 <div className='meowl_navegation_earlier_content'>
-                                    <h3>Preço do token</h3>
+                                    <h3>{t('navegationProject.titles.tokenPrice')} </h3>
                                     <p> {Launchprice}</p>
                                 </div>
                             </div>
                             <div className='meowl_navegation_price'>
                                 <div className='meowl_navegation_earlier_content'>
-                                    <h3>Preço de mercado</h3>
+                                    <h3>{t('navegationProject.titles.marketPrice')}</h3>
                                     <p>{currenprice}</p>
                                 </div>
                             </div>
                             <div className='meowl_navegation_price'>
                                 <div className='meowl_navegation_earlier_content'>
-                                    <h3>Alta histórica</h3>
+                                    <h3>{t('navegationProject.titles.historicalHigh')}</h3>
                                     <p>{ath}</p>
                                 </div>
                             </div>
@@ -763,12 +768,12 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <div className='meowl_navegation_title_container'>
                         
                                     <div className='meowl_navegation_token_info_h2'>
-                                        <h2>Recebimento</h2>
+                                        <h2>{t('navegationProject.titles.receiving')}</h2>
                                         <IoMdInformationCircleOutline className='meowl_navegation_pools_icon' 
                                      onClick={() => handleOpenPopup(popupData.Claimsection.title, popupData.Claimsection.content)}/>
                                     </div>            
                                     <div className='meowl_navegation_token_info_data1'>
-                                        <h3>Plataforma de recebimento</h3>
+                                        <h3>{t('navegationProject.titles.receiving_platform')}</h3>
                                         <p>{distribution}</p>
                                     </div>  
                                 </div>
@@ -790,9 +795,9 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                   <div className='meowl_navegation_BuyMint'>
                     <div className='meowl_navegation_earlier_content'>
                       <div className='meowl_buy_title1'>
-                        <h2>Comprar</h2>         
+                        <h2>{t('navegationProject.titles.buyButton')}</h2>         
                       </div>
-                      <p>Para realizar compras, você deve ter {buy_with} na rede Polygon. 1 Token representa 1 tCO2eq.
+                      <p>{t('navegationProject.messages.buyWarning')} {buy_with} {t('navegationProject.messages.buyWarning2')}
                       </p>
                       <div className='meowl_buy_title_input'>
                         
@@ -816,7 +821,9 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                             className='desktop-only' 
                             onClick={isCorrectNetwork ? aprove : switchNetwork}
                           >
-                            {isCorrectNetwork ? 'Comprar' : 'Mudar de Rede'}
+                            {isCorrectNetwork
+                              ? t('navegationProject.titles.buyButton')     // "Comprar"
+                              : t('navegationProject.messages.switchNetwork')}
                           </button>
                         </div>
                         <div className='meow__buy_mobile_buttons'>
@@ -826,17 +833,19 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                             disabled={!account || !amountBlockchain} 
                             onClick={isCorrectNetwork ? approveTokens : switchNetwork}
                           >
-                            {isCorrectNetwork ? 'Aprovar' : 'Mudar de Rede'}
+                             {isCorrectNetwork
+                              ? t('navegationProject.titles.approveButton')     // "Comprar"
+                              : t('navegationProject.messages.switchNetwork')}
                             
                           </button>
-                          <button className='mobile-only' disabled={!account || !amountBlockchain} onClick={buyTokens}> Comprar </button>
+                          <button className='mobile-only' disabled={!account || !amountBlockchain} onClick={buyTokens}> {t('navegationProject.titles.buyButton')} </button>
                         </div>
                         
                       </div>
                       {!isCorrectNetwork && (
                         <p className='network-warning'>
-                          Para realizar compras, você precisa estar na rede correta. Por favor, clique no botão acima para mudar de rede.
-                        </p>
+                          {t('navegationProject.messages.networkWarning')} 
+                            </p>
                         )}
                       </div>
                     </div>
@@ -846,32 +855,37 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                     <div className='meowl_navegation_token_info_title'>
                       <div className='meowl_navegation_user_container'>
                         <div className='meowl_navegation_token_info_h2'>
-                          <h2>Minhas informações</h2>
+                          <h2>{t('navegationProject.titles.mineInformations')} </h2>
                         </div>   
                         <div className='meowl_navegation_token_info_data2'>
-                          <h3>Total investido em Dólar</h3>
+                          <h3>{t('navegationProject.titles.dolarinvested')}</h3>
                           <p>{userData.totalInvested ?? 0}</p>
                         </div>          
                         <div className='meowl_navegation_token_info_data1'>
-                          <h3> Total de toneladas compradas</h3>
+                          <h3> {t('navegationProject.titles.totalTonsPurchased')}</h3>
                           <p>{userData.totalPurchased ?? 0}</p>
                         </div>         
                         <div className='meowl_navegation_token_info_data2'>
-                          <h3>Saldo em tokens</h3>
+                          <h3>{t('navegationProject.titles.tokenBalance')}</h3>
                           <p>{userData.tokenBalance ?? 0}</p>
                         </div> 
                         <div className='meowl_navegation_token_info_data2'>
-                          <h3>Total queimado</h3>
+                          <h3>{t('navegationProject.titles.totalBurned')}</h3>
                           <p>{userData.tokenBurned ?? 0}</p> 
                         </div> 
                         <div className='meowl_navegation_token_info_data2'>
-                          <h3>Saque realizado</h3>
+                          <h3>{t('navegationProject.titles.withdrawalsDone')}</h3>
                           <p>{userData.totalwithdrawn ?? 0}</p> 
                         </div> 
 
-                        <p>Obs: Após a compra, seus tokens estarão disponíveis na plataforma Slab. Para 
-                        sacá-los ou exercer seus direitos sobre os ativos de biodiversidade lastreados em 
-                        CPR-Verde, preencha o formulário abaixo.</p>
+                        <p>{t('navegationProject.messages.purchaseNote').split('<br/><br/>').map((line, index) => (
+                           <>
+                           {line}
+                          
+                         </>
+                        ))}
+                    </p>  
+                          
                         
                       </div>
                     </div>
@@ -880,7 +894,8 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
               </>
             ) : (
                 <div className='meowl_buy_claim_box'>
-                        <p>Quando a CPR estiver aberta, você poderá comprar aqui.</p>            
+                        <p>{t('navegationProject.messages.noOpenBuy')}</p>
+                                    
                 </div>
             ),
           }
@@ -905,13 +920,13 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 className={activeIndex === 0 ? 'actived' : ''}
                                 onClick={() => handleSectionClick(0)}
                             >
-                                Venda do token
+                                {t('navegationProject.titles.tokenSale')}
                             </p>
                             <p 
                                 className={activeIndex === 1 ? 'actived' : ''}
                                 onClick={() => handleSectionClick(1)}
                             >
-                                Descriçao
+                                {t('upcomingProjects.description')}
                             </p>
                             <p 
                                 className={activeIndex === 2 ? 'actived' : ''}
@@ -923,13 +938,13 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 className={activeIndex === 3 ? 'actived' : ''}
                                 onClick={() => handleSectionClick(3)}
                             >
-                                Recebimento
+                                {t('navegationProject.titles.receiving')}
                             </p>
                             <p 
                                 className={activeIndex === 4 ? 'actived' : ''}
                                 onClick={() => handleSectionClick(4)}      
                             >
-                                Comprar
+                                {t('navegationProject.titles.buyButton')}
                             </p>
                             
                         </div>
@@ -941,7 +956,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <LuAlertCircle className='meowl_meowl_navegation_box_icon' />
                                 
                                 <p>
-                                    Conecte sua carteira para ver os detalhes to token
+                                  {t('navegationProject.messages.connectWallet')}
                                 </p>
                                 
                                
@@ -958,14 +973,14 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                                 <div className='meowl_navegation_box_content'>
                                     <LuAlertCircle className='meowl_meowl_navegation_box_icon' />
                                         <p>
-                                          Mude a rede usando o botão abaixo, para ser possível ver as informações to do token.
+                                        {t('navegationProject.messages.networkChangeMessage')}
                                         </p>
                                       
                                 </div>
                             
                             </div>
                             <button onClick={switchNetwork} className='switch-network-button'>
-                                        Mude a rede
+                                       {t('navegationProject.messages.switchNetwork')}
                                         </button>       
                         </div>
                          ) : null}
@@ -978,63 +993,70 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                     </div>
                     
                     <div className='meowl_navegation_contentSecond'>
-                        <div className='meowl_navegation_card_container'>
-                            <div className='meowl_navegation_card_title'>
-                                <h2>Detalhes da oferta</h2>
-                                <div className='meowl_navegation_funding_container'>
-                                    <div className='meowl_navegation_funding_content'>
-                                        <h3>Toneladas em oferta</h3>
-                                        <p>{fundraise_goal}</p>
-                                    </div>
-                                    <div className='meowl_navegation_funding_logo'>
-                                        <img src={built_on2} alt='logo' />
-                                    </div>
-                                </div>
-                                <div className='meowl_teste1'>
-                                    <div className='meowl_navegation_funding_numbers'>
-                                    <p>{alreadyCapturedForm}</p>
-                                        <p>{toneladasGol}</p>
-                                    </div>
-                                    
-                                      <div className='meowl_navegation_funding_loading'>
-                                      <div 
-                                        className='progress-bar'
-                                        style={{ width: `${progressPercentage}%` }}
-                                        // Corrigido para usar crase e notação de interpolação correta
-                                      />
-                                      </div> 
-                                    
-                                    <div className='meowl_navegation_title_info'>
-                                        <h2>Info</h2>
-                                    </div>            
-                                    <div className='meowl_navegation_funding_division'>   </div>
-                                    <div className='meowl_navegation_funding_division2'>   </div>
-                                    <div className='meowl_navegation_funding_data1'>
-                                        <h3>Preço do token</h3>
-                                        <p>{token_price}</p>
-                                    </div>  
-                                    <div className='meowl_navegation_funding_division'>   </div>
-                                    <div className='meowl_navegation_funding_division'>   </div>
-                                    
-                                
-                                    <div className='meowl_navegation_funding_data2'>
-                                        <h3> Blockchain </h3>
-                                        <p>{buil_on}</p>
-                                    </div> 
-                                    <div className='meowl_navegation_funding_division'>   </div>
-                                    <div className='meowl_navegation_funding_division'>   </div>  
-                                    <div className='meowl_navegation_funding_data3'>
-                                        <h3> Moeda para compra </h3>
-                                        <p> USDC</p>
-                                    </div>  
-                                
-                                </div>
-                                    
-                            </div>
+                    <div className='meowl_navegation_card_container'>
+                      <div className='meowl_navegation_card_title'>
+                        {/* Antes: <h2>Detalhes da oferta</h2> */}
+                        <h2>{t('navegationProject.titles.offerDetails')}</h2>
 
-                            
-                        </div>       
-                    </div>
+                        <div className='meowl_navegation_funding_container'>
+                          <div className='meowl_navegation_funding_content'>
+                            {/* Antes: <h3>Toneladas em oferta</h3> */}
+                            <h3>{t('navegationProject.titles.tonsOnOffer')}</h3>
+                            <p>{fundraise_goal}</p>
+                          </div>
+                          <div className='meowl_navegation_funding_logo'>
+                            <img src={built_on2} alt='logo' />
+                          </div>
+                        </div>
+
+                        <div className='meowl_teste1'>
+                          <div className='meowl_navegation_funding_numbers'>
+                            <p>{alreadyCapturedForm}</p>
+                            <p>{toneladasGol}</p>
+                          </div>
+                          
+                          <div className='meowl_navegation_funding_loading'>
+                            <div 
+                              className='progress-bar'
+                              style={{ width: `${progressPercentage}%` }}
+                            />
+                          </div> 
+
+                          <div className='meowl_navegation_title_info'>
+                            {/* Antes: <h2>Info</h2> */}
+                            <h2>{t('navegationProject.titles.info')}</h2>
+                          </div>            
+
+                          <div className='meowl_navegation_funding_division'/>
+                          <div className='meowl_navegation_funding_division2'/>
+
+                          <div className='meowl_navegation_funding_data1'>
+                            {/* Antes: <h3>Preço do token</h3> */}
+                            <h3>{t('navegationProject.titles.tokenPrice')}</h3>
+                            <p>{token_price}</p>
+                          </div>  
+                          
+                          <div className='meowl_navegation_funding_division'/>
+                          <div className='meowl_navegation_funding_division'/>
+
+                          <div className='meowl_navegation_funding_data2'>
+                            {/* Antes: <h3>Blockchain</h3> */}
+                            <h3>{t('navegationProject.titles.blockchain')}</h3>
+                            <p>{buil_on}</p>
+                          </div> 
+
+                          <div className='meowl_navegation_funding_division'/>
+                          <div className='meowl_navegation_funding_division'/>
+
+                          <div className='meowl_navegation_funding_data3'>
+                            {/* Antes: <h3>Moeda para compra</h3> */}
+                            <h3>{t('navegationProject.titles.purchaseCurrency')}</h3>
+                            <p>USDC</p>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>       
+                  </div>
                     
                 </div>
                 {isBuyClaimActive && claim_section && (
@@ -1042,7 +1064,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                     <div className='meowl_navegation_Third_card'>
                         <div className='meowl_navegation_card_title'>
                         <div className='meowl_naegation_third_first_div'>
-                            <h2>Painel de Transaprência</h2>
+                            <h2>{t('navegationProject.titles.claimPanel')}</h2>
                             <IoMdInformationCircleOutline
                             className='meowl_navegation_pools_icon'
                             onClick={() =>

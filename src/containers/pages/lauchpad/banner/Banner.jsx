@@ -1,22 +1,21 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
+import { useTranslation } from 'react-i18next'; // Hook de tradução
 import ProjectLogo from '../../../../img/assets/logos/slab_greenlogo.svg';
-
-
 
 //css
 import './banner.css';
 import { ThemeContext } from '../../../../components/themecontext/ThemeContext';
 
 const Banner = () => {
-
   const { isLigmode } = useContext(ThemeContext);
+  const { t } = useTranslation(); // Hook de tradução
+
   return (
-    
     <div className={`meow__banner  ${isLigmode ? 'lightmode' : ''}`}>
       <div className='meow__banner_content'>
         <div className='meow__banner_text'>
-          <h1>Você lidera um projeto inovador e está pronto para transformar ativos reais e sustentáveis em tokens?</h1>
-          <p>Entre em contato com a Slab Assets hoje mesmo para explorar oportunidades de tokenização e lançamento de ativos. Conecte-se à nossa comunidade, uma das mais engajadas e influentes no espaço de tokenização. Junte-se a nós e vamos moldar o futuro dos ativos tokenizados juntos!</p>
+          <h1>{t('banner.title')}</h1>
+          <p>{t('banner.description')}</p>
         </div> 
         <div className='meow__banner_logo'>
           <img src={ProjectLogo} alt='projectlogo' />
@@ -24,11 +23,11 @@ const Banner = () => {
       </div>
       <div className="meow__banner__button">
         <a href="https://forms.gle/7GAt424sNFooMk1r7" target="_blank" rel="noopener noreferrer" className="meow__banner__link">
-          Entre em contato
+          {t('banner.button')}
         </a>
       </div>
     </div>
-  )
+  );
 }
 
 export default Banner;

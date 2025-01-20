@@ -1,12 +1,15 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { db } from "../firebase/firebase"; // Certifique-se de que o caminho está correto
 import { collection, addDoc } from "firebase/firestore";
 import "./forms.css";
 import { useWallet } from "../../components/wallet/Walletcontext";
+import { useTranslation } from "react-i18next"; // Importar o hook de tradução
 
 const Forms = () => {
-  const { account, connectWallet } = useWallet();
+  const { account } = useWallet();
+  const { t } = useTranslation(); // Hook para tradução
 
   const [formData, setFormData] = useState({
     name: "",
@@ -43,9 +46,7 @@ const Forms = () => {
     try {
       // Enviando os dados para o Firestore
       await addDoc(collection(db, "CprBurn"), formData);
-      setSuccessMessage(
-        "Processo iniciado! Um representante Slab entrará em contato, seu Selo ou Certificado Verde será emitido em breve."
-      );
+      setSuccessMessage(t("forms.messages.success"));
       setFormData({ name: "", email: "", phone: "", wallet: "", message: "" });
     } catch (error) {
       console.error("Erro ao enviar o formulário:", error);
@@ -58,57 +59,54 @@ const Forms = () => {
     <div className="forms_burn">
       <div className="forms_burn_background">
         <div className="forms_burn_content">
-          <h1>Exercer Benefícios do TBIO / Realizar saque</h1>
+          <h1>{t("forms.titles.mainTitle")}</h1>
           <div className="forms_burn_division"></div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Nome Completo (obrigatório)</label>
+            <label htmlFor="name">{t("forms.labels.name")}</label>
             <input
               type="text"
               id="name"
-              placeholder="Seu Nome"
+              placeholder={t("forms.placeholders.name")}
               value={formData.name}
               onChange={handleChange}
               required
             />
 
-            <label htmlFor="email">E-mail (obrigatório)</label>
+            <label htmlFor="email">{t("forms.labels.email")}</label>
             <input
               type="email"
               id="email"
-              placeholder="Seu E-mail"
+              placeholder={t("forms.placeholders.email")}
               value={formData.email}
               onChange={handleChange}
               required
             />
 
-            <label htmlFor="phone">Telefone/WhatsApp</label>
+            <label htmlFor="phone">{t("forms.labels.phone")}</label>
             <input
               type="tel"
               id="phone"
-              placeholder="(XX) XXXXX-XXXX"
+              placeholder={t("forms.placeholders.phone")}
               value={formData.phone}
               onChange={handleChange}
             />
 
-            <label htmlFor="wallet">Endereço de Carteira (obrigatório)</label>
+            <label htmlFor="wallet">{t("forms.labels.wallet")}</label>
             <input
               type="text"
               id="wallet"
               name="wallet_address"
-              placeholder="0xe0e...3f3a0"
+              placeholder={t("forms.placeholders.wallet")}
               value={formData.wallet}
               onChange={handleChange}
               autoComplete="off"
             />
 
-            <label htmlFor="message">
-              Deixe suas informações abaixo, e um representante Slab entrará em
-              contato:
-            </label>
+            <label htmlFor="message">{t("forms.labels.message")}</label>
             <textarea
               id="message"
               rows={4}
-              placeholder="Sua mensagem"
+              placeholder={t("forms.placeholders.message")}
               value={formData.message}
               onChange={handleChange}
             ></textarea>
@@ -118,10 +116,14 @@ const Forms = () => {
               className="submit_button_burn"
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Enviando..." : "Enviar"}
+              {isSubmitting
+                ? t("forms.buttons.submitting")
+                : t("forms.buttons.submit")}
             </button>
 
-            {successMessage && <p className="success_message">{successMessage}</p>}
+            {successMessage && (
+              <p className="success_message">{successMessage}</p>
+            )}
           </form>
         </div>
       </div>
