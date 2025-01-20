@@ -1,8 +1,10 @@
 {
-    "build": {
-      "env": {
-        "NPM_FLAGS": "--legacy-peer-deps"
-      }
-    }
+  "build": {
+    "env": {
+      "NPM_FLAGS": "--legacy-peer-deps"
+    },
+    "commands": [
+      "npm install typescript@4.9.5"
+    ]
   }
-  
+}
