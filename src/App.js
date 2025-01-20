@@ -13,6 +13,7 @@ import './App.css';
 import { Navbar } from './components';
 import { Footer, ScrollTop } from './components';
 import {WalletProvider} from './components/wallet/Walletcontext.jsx';
+import './i18n';
 
   
 

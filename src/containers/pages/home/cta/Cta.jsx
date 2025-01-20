@@ -2,11 +2,14 @@
 import { useState } from 'react';
 import { db } from '../../../../components/firebase/firebase'; // Certifique-se de que o caminho está correto
 import { collection, addDoc } from 'firebase/firestore';
-import './cta.css'
+import { useTranslation } from 'react-i18next'; // Importação do hook de tradução
+import './cta.css';
 
 import banner from '../../../../img/assets/cta/banner_cta.svg';
 
 export default function Forms() {
+  const { t } = useTranslation(); // Hook para tradução
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,9 +32,8 @@ export default function Forms() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      // Enviando os dados para o Firestore
       await addDoc(collection(db, 'formResponses'), formData);
-      setSuccessMessage('Formulário enviado com sucesso!');
+      setSuccessMessage(t('supportCenter.successMessage', 'Form successfully submitted!'));
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       console.error('Erro ao enviar o formulário:', error);
@@ -41,43 +43,35 @@ export default function Forms() {
   };
 
   return (
-    <div className='forms'>
-      <div className='forms_container'>
-        {/* Fundo dividido em duas cores */}
-        <div className='back'>
-          <div className='topHalf'></div>
-          <div className='bottomHalf'></div>
+    <div className="forms">
+      <div className="forms_container">
+        <div className="back">
+          <div className="topHalf"></div>
+          <div className="bottomHalf"></div>
         </div>
 
-        {/* Imagem sobreposta */}
-        <div className='imageWrapper'>
+        <div className="imageWrapper">
           <img
             src={banner}
-            alt="Placeholder"
-            className='forms_banner_image'
+            alt={t('supportCenter.title')}
+            className="forms_banner_image"
             width={100}
             height={100}
           />
-
-          {/* Texto sobreposto dentro da imagem */}
-          <div className='imageTextOverlay'>
-            <h2>Central de Suporte</h2>
-            <div className='desktopText'>
-              <p>
-                Estamos aqui para ajudar! Nossa<br />
-                equipe de suporte ao cliente é<br />
-                altamente capacitada e está pronta<br />
-                para atender às suas necessidades.
-              </p>
-            </div>
-            <div className='mobileText'>
-              <p>Entre em contato clicando no botão abaixo.</p>
+          <div className="imageTextOverlay">
+            <h2>{t('supportCenter.title')}</h2>
+            <div className="desktopText">
+            <p
+                dangerouslySetInnerHTML={{
+                  __html: t('supportCenter.description'),
+                }}
+              ></p>
             </div>
             <button
-              className='cta_button'
+              className="cta_button"
               onClick={() =>
                 window.open(
-                  'mailto:suporte@4cashpay.com.br?subject=Suporte&body=Olá, preciso de ajuda com...'
+                  'mailto:suporte@slab.com.br?subject=Suporte&body=Olá, preciso de ajuda com...'
                 )
               }
             >
@@ -87,57 +81,54 @@ export default function Forms() {
         </div>
       </div>
 
-      {/* Seção de Fundo e Formulário */}
-      <div className='forms_container_background'>
-        <div className='forms_container_content'>
-          <h1>Vem Conhecer!</h1>
-          <div className='forms_division'></div>
+      <div className="forms_container_background">
+        <div className="forms_container_content">
+          <h1>{t('supportCenter.title2')}</h1>
+          <div className="forms_division"></div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Nome Completo (obrigatório)</label>
+            <label htmlFor="name">{t('supportCenter.forms1')}</label>
             <input
               type="text"
               id="name"
-              placeholder="Seu Nome"
+              placeholder={t('supportCenter.input1')}
               value={formData.name}
               onChange={handleChange}
               required
             />
 
-            <label htmlFor="email">E-mail (obrigatório)</label>
+            <label htmlFor="email">{t('supportCenter.forms2')}</label>
             <input
               type="email"
               id="email"
-              placeholder="Seu E-mail"
+              placeholder={t('supportCenter.input2')}
               value={formData.email}
               onChange={handleChange}
               required
             />
 
-            <label htmlFor="phone">Telefone/WhatsApp</label>
+            <label htmlFor="phone">{t('supportCenter.forms3')}</label>
             <input
               type="tel"
               id="phone"
-              placeholder="(XX) XXXXX-XXXX"
+              placeholder={t('supportCenter.input3')}
               value={formData.phone}
               onChange={handleChange}
             />
 
-            <label htmlFor="message">
-              Conte um pouco sobre a sua empresa e como a Slab pode te ajudar:
-            </label>
+            <label htmlFor="message">{t('supportCenter.forms4')}</label>
             <textarea
               id="message"
               rows={4}
-              placeholder="Sua mensagem"
+              placeholder={t('supportCenter.input4')}
               value={formData.message}
               onChange={handleChange}
             ></textarea>
 
-            <button type="submit" className='submit_button' disabled={isSubmitting}>
-              {isSubmitting ? 'Enviando...' : 'Enviar'}
+            <button type="submit" className="submit_button" disabled={isSubmitting}>
+              {isSubmitting ? t('forms.sending', 'Sending...') : t('supportCenter.button')}
             </button>
 
-            {successMessage && <p className='success_message'>{successMessage}</p>}
+            {successMessage && <p className="success_message">{successMessage}</p>}
           </form>
         </div>
       </div>

@@ -10,16 +10,19 @@ import { AiFillInstagram } from "react-icons/ai";
 import { TfiWorld } from "react-icons/tfi";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../themecontext/ThemeContext';
+import { useTranslation } from 'react-i18next'; // Importa para suporte à tradução
 
 const Footer = () => {
-
   const { isLigmode } = useContext(ThemeContext);
+  const { t } = useTranslation(); // Hook para tradução
+
   return (
     <div className={`meow__footer ${isLigmode ? 'lightmode' : ''}`}>
       <div className='meow__footer_links'>
         <div className='meow__footer-logo'>
-        <Link to="/"><img src={isLigmode ? logotipo_white_block : logotipo_positive_block} alt='logotipo' /></Link>
-          <h3>Tokenização de RWA.</h3>
+          <Link to="/"><img src={isLigmode ? logotipo_white_block : logotipo_positive_block} alt='logotipo' /></Link>
+          {/* Adiciona tradução ao texto */}
+          <h3>{t('footer.rwaTokenization')}</h3>
         </div>
         {/*
         <div className='meow__footer_firstcolun'>
@@ -45,23 +48,22 @@ const Footer = () => {
           <a href="https://meowl-1.gitbook.io/meowlverse-whitepaper/roadmap" target="_blank" rel="noopener noreferrer">
           <p>Seu Texto</p>
           </a>
-          
         </div>
         */}
         <div className='meow__footer_division'>
-          <img src={Division} alt='division'/>
+          <img src={Division} alt='division' />
         </div>
         <div className='meow__footer_copyright'>
           <p>©2021 Bloxifi. All rights reserved.</p>
           <ul className='meow__footer_sociallist'>
             <li>
-            <a href="https://www.instagram.com/slab_assets?igsh=MXF0aXIzOTUwazZmbQ%3D%3D&utm_source=qr " target="_blank" rel="noopener noreferrer">
-              <AiFillInstagram />
+              <a href="https://www.instagram.com/slab_assets?igsh=MXF0aXIzOTUwazZmbQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                <AiFillInstagram />
               </a>
             </li>
             <li>
-            <a href="https://t.me/+riHQZk6L02I4ODNh" target="_blank" rel="noopener noreferrer">
-              <TfiWorld />
+              <a href="https://t.me/+riHQZk6L02I4ODNh" target="_blank" rel="noopener noreferrer">
+                <TfiWorld />
               </a>
             </li>
           </ul>

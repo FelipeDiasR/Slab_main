@@ -1,0 +1,74 @@
+{
+    "navbar": {
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode",
+      "launches": "Launches",
+      "calculator": "Calculator",
+      "contact": "Contact",
+      "connectWallet": "Connect Wallet"
+    },
+
+
+    "header": {
+    "title": "Sustainability, Biodiversity, and Security",
+    "description": "SlaB Assets is a pioneer in the tokenization of biodiversity assets, promoting environmental conservation. Biodiversity assets are measured in CO₂, tCO₂eq (ton of carbon dioxide equivalent)—among other greenhouse gases present in all biomass—as well as other key factors of an ecosystem, from the subsoil to the atmosphere. We offer a secure and transparent Web3 platform for those who wish to invest in the planet’s future, preserving our ecosystems and generating positive impact.",
+    "buy": "Buy",
+    "learnMore": "Learn More"       
+  },
+
+  "services": {
+    "title": "Services",
+    "biodiversityAssets": {
+      "title": "Biodiversity Assets",
+      "description": "Meet TBio, a biodiversity token backed by CPR-Verde and registered on the B3 (Brasil Bolsa Balcão) platform. Capturing the value of forest conservation, TBio complies with Law No. 13.986/2020—regulated by Decree No. 10.828/2021—which introduced, into Brazilian legislation, the possibility of issuing Rural Product Certificates backed by forest/environmental assets (Biodiversity Assets). It follows the standards and rules of national and international organizations such as IPCC, WRI, GRI, GHG Protocol, ICR/CORSIA, ISO series 14064 and 6000, ABNT NBR ISO 14064:2007-2, as well as CO₂ and tCO₂eq quantification formulas, metering methodologies, standard deviation, and indices according to academic norms, rules, and standards."
+    },
+    "tokenization": {
+      "title": "Tokenization and Blockchain",
+      "description": "We use cutting-edge technology to tokenize biodiversity assets, ensuring secure and traceable trading on the blockchain. This innovation enables the creation of fractional digital units, facilitating global commercialization with complete transparency, security, and the ability to track the positive impact of each investment."
+    },
+    "deforestationFreeSeal": {
+      "title": "Deforestation-Free Seal",
+      "description": "By using TBio, customers receive the Deforestation-Free Seal, certifying forest conservation and guaranteeing “no greenwash.” With an integrated QR Code, georeferencing, and an audited inventory, the seal verifies the avoided deforestation and the sustainable origin of the asset. It is issued after the burn process, ensuring traceability and legal security."
+    }
+  },
+
+  "joinProjects": {
+    "title": "Join Our Projects",
+    "description": "Join our projects, invest in sustainability, and help transform biodiversity into a positive impact for the planet.",
+    "buttons": {
+      "buy": "Buy",
+      "learnMore": "Learn More"
+    }
+  },
+  "Partners": {
+    "title": "Partners"
+    },
+
+    "tbioGeneration": {
+    "title": "TBio Generation Process",
+    "description": "The generation of biodiversity assets is carried out with the highest levels of security and transparency. The entire process—from inventory to certification—is conducted by experts and audited by third parties, ensuring traceability and immutability on the blockchain. Assets backed by CPR-Verde value 27 ecosystem services, including carbon capture, ensuring both legal and financial security."
+  },
+
+  "supportCenter": {
+  "title": "Support Center",
+  "description": "We are here to help! Our<br />customer support team is<br />highly skilled and ready<br />to meet your needs.",
+  "title2": "Come and Meet Us!",
+  "forms1": "Full Name (required)",
+  "input1": "Your name",
+  "forms2": "Email (required)",
+  "input2": "Your email",
+  "forms3": "Phone/WhatsApp",
+  "input3": "(xx) xxxxx-xxxx",
+  "forms4": "Tell us a bit about your company and how Slab can assist you:",
+  "input4": "Your message",
+  "button": "Send"
+},
+
+"footer": {
+  "rwaTokenization": "RWA Tokenization"
+}
+
+
+  }
+
+  

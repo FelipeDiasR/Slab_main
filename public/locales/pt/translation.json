@@ -1,0 +1,74 @@
+{
+    "navbar": {
+      "darkMode": "Modo Claro",
+      "lightMode": "Modo Escuro",
+      "launches": "Lançamentos",
+      "calculator": "Calculadora",
+      "contact": "contato",
+      "connectWallet": "Conectar Carteteira"
+    },
+
+
+    "header": {
+    "title": "Sustentabilidade, Biodiversidade e Blindagem.",
+    "description": "A SlaB Assets é pioneira na tokenização de ativos de biodiversidade, promovendo a conservação ambiental . Os ativos de biodiversidade, tem como unidade métrica o CO2, o tCO2eq. (tonelada de dióxido de carbono equivalente),dentre outros gases do efeito estufa presentes em toda biomassa, além de outros fatores determinantes de um ecossistema, do subsolo a atmosfera. Oferecemos uma plataforma em Web3 segura e transparente para aqueles que desejam investir no futuro do planeta, preservando nossos ecossistemas e gerando impacto positivo.",
+    "buy": "Comprar",
+    "learnMore": "Saiba Mais"       
+  },
+
+  "services": {
+    "title": "Serviços",
+    "biodiversityAssets": {
+      "title": "Ativos de Biodiversidade",
+      "description": "Conheça o Tbio, um token de biodiversidade lastreado em CPR-Verde e registrado em ambiente B3 (Brasil Bolsa Balcão). Capiturando valor da conservação florestal, o TBio está em conformidade com o que determina a Lei nº 13.986/2020 , regulamentada pelo Decreto nº 10.828/ 2021 , que introduziu na legislação Brasileira a possibilidade da emissão de Cédula de Produto Rural lastreadas em ativos florestais/ambientais (Ativos de Biodiversidade), normas e regras dos organismos nacionais e internacionais como IPCC, WRI, GRI, GHG Protocol, ICR/CORSIA, ISO séries 14064 e 6000, ABNT NBR ISO 14064:2007-2, além das fórmulas de quantificação de CO2 e tCO2eq., metrificações, desvio padrão e índices seguindo as normas, regras e padrões acadêmicos."
+    },
+    "tokenization": {
+      "title": "Tokenização e Blockchain",
+      "description": "Utilizamos tecnologia de ponta para tokenizar ativos de biodiversidade, garantindo negociação segura e rastreável no blockchain. Essa inovação permite criar unidades digitais fracionadas, facilitando sua comercialização global com total transparência, segurança e rastreamento do impacto positivo de cada investimento."
+    },
+    "deforestationFreeSeal": {
+      "title": "Selo Livre de Desmatamento",
+      "description": "Ao utilizar o TBio, clientes recebem o Selo Livre de Desmatamento, certificando a conservação florestal e o “no-greenwash”. Com QR Code, georreferenciamento e inventário auditado, o selo comprova o desmatamento evitado e a origem sustentável do ativo e é emitido após o processo de burn, garantindo rastreabilidade e segurança jurídica."
+    }
+  },
+  
+  "joinProjects": {
+    "title": "Participe dos nossos projetos",
+    "description": "Envolva-se com os projetos da SlaB.Assets, invista em sustentabilidade e ajude a transformar biodiversidade em impacto positivo para o planeta.",
+    "buttons": {
+      "buy": "Comprar",
+      "learnMore": "Saiba Mais"
+    }
+  },
+
+  "Partners": {
+    "title": "Parceiros"
+    },
+
+    "tbioGeneration": {
+    "title": "Processo de Geração TBio",
+    "description": "A geração de ativos de biodiversidade é realizada com máxima segurança e transparência. Todo processo, do inventário até a certificação, é conduzido por especialistas e auditado por Terceira parte, garantindo rastreabilidade e imutabilidade no blockchain. Os ativos lastreados em CPR-Verde, valorizam 27 serviços ecossistêmicos, incluindo captura de carbono, garantindo segurança jurídica e financeira."
+  },
+
+    "supportCenter": {
+  "title": "Central de Suporte",
+  "description": "Estamos aqui para ajudar! Nossa<br />equipe de suporte ao cliente é<br />altamente capacitada e está pronta<br />para atender às suas necessidades.",
+  "title2": "Vem Conhecer!",
+  "forms1": "Nome Completo (obrigatório)",
+  "input1": "Seu nome",
+  "forms2": "E-mail (obrigatório)",
+  "input2": "Seu E-mail",
+  "forms3": "Telefone/WhatsApp",
+  "input3": "(xx) xxxxx-xxxx",
+  "forms4": "Conte um pouco sobre a sua empresa e como a Slab pode te ajudar:",
+  "input4": "Sua mensagem",
+  "button": "Enviar"
+},
+
+"footer": {
+  "rwaTokenization": "Tokenização de RWA."
+}
+
+  }
+
+  

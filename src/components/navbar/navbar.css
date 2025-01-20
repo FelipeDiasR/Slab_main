@@ -11,6 +11,53 @@
     
 }
 
+.language-selector .current-language {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .light-mode .language-selector .current-language{
+    background: none;
+    border: none;
+  }
+  
+  .language-selector .language-options {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .light-mode .language-selector .language-options {
+    background-color: #27064F  !important;
+  }
+  
+  .language-selector .language-options button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .language-selector .language-options button:hover {
+    background: #f0f0f0;
+  }
+
+  
+
+ 
+
 .meow__navbar_logo {
     flex: 1;
 }
@@ -162,6 +209,10 @@ li {
     .light-mode .meow__navbar-menu button.color-mode-toggle {
         background-color: #27064F !important;
         color: #ffffff !important;
+    }
+
+    .language-selector {
+        display: none;
     }
 
     .meow__navbar_preesale {
