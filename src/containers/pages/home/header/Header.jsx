@@ -14,9 +14,14 @@ const Header = () => {
     <div className={`meow__header ${isLigmode ? 'lightmode' : ''}`} id="home">
       <div className="meow_header_container">
         <div className="meow__header_content">
-          <h1 className="gradient_text">
-            {t('header.title')} {/* Título traduzido */}
-          </h1>
+        <h1 className="gradient_text">
+          {t('header.title').split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </h1>
           <p>
             {t('header.description')} {/* Descrição traduzida */}
           </p>
