@@ -8,9 +8,9 @@
       "project_logo": "/cardsprojects/1cpr/logo_tbio.svg",
       "banner_main": "/cardsprojects/1cpr/banner_projP_1CPR.svg",
       "social_links": {
-        "website": "https://somasustentabilidade.com.br/",
+        "website": "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105741123&keywords=slab%20assets&origin=RICH_QUERY_SUGGESTION&position=0&searchId=1367519b-fe42-49bb-a6fb-bf3fbc4e86fa&sid=lnl&spellCorrectionEnabled=false",
         "twitter": "https://drive.google.com/drive/folders/175BELZWa4By-2Ec8hAOvyLsHOrKJLg09?usp=sharing",
-        "telegram": "https://somasustentabilidade.com.br/"
+        "telegram": "https://www.instagram.com/slab_assets/?igsh=MXF0aXIzOTUwazZmbQ%3D%3D&utm_source=qr#"
       },
       "isCompleted": false,
       "status": "projects.status.open",
@@ -42,7 +42,7 @@
       "completed_descrption": "projects.completedDescription1",
       "Launchprice": "$7",
       "currenprice": "-",
-      "ath": "-",
+      "ath": "https://polygonscan.com/address/0xa8C09E3251E80C5D9916CfF0f42146D2Ed070EaC",
       "number_realeses": "-",
       "clif": "-",
       "claim_interval": "------",
@@ -51,7 +51,7 @@
       "token_price": 7,
       "buil_on": "Polygon",
       "smartcontractaddress": "0xE8e55682e7531376A44726d59420D17559612655",
-      "token_address": "0x657963B8a6D31c3CECDaD72dE4A5BA50C18358fE",
+      "token_address": "0xa8C09E3251E80C5D9916CfF0f42146D2Ed070EaC",
       "smartcontractabi": true,
       "stableAddress": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       "claim_section": true,
@@ -76,9 +76,9 @@
       "project_logo": "/cardsprojects/1cpr/logo_tbio.svg",
       "banner_main": "/cardsprojects/2cpr/banner_proj_2cpr.svg",
       "social_links": {
-        "website": "https://somasustentabilidade.com.br/",
-        "twitter": "https://drive.google.com/drive/folders/1oEFqDploDWzMzpijffIORVxOxio0ikhz?usp=sharing",
-        "telegram": "https://somasustentabilidade.com.br/"
+        "website": "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105741123&keywords=slab%20assets&origin=RICH_QUERY_SUGGESTION&position=0&searchId=1367519b-fe42-49bb-a6fb-bf3fbc4e86fa&sid=lnl&spellCorrectionEnabled=false",
+        "twitter": "https://drive.google.com/drive/folders/175BELZWa4By-2Ec8hAOvyLsHOrKJLg09?usp=sharing",
+        "telegram": "https://www.instagram.com/slab_assets/?igsh=MXF0aXIzOTUwazZmbQ%3D%3D&utm_source=qr#"
       },
       "isCompleted": false,
       "status": "projects.status.open",
@@ -110,7 +110,7 @@
       "completed_descrption": "projects.completedDescription2",
       "Launchprice": "$7",
       "currenprice": "-",
-      "ath": "-",
+      "ath": "https://polygonscan.com/address/0x7db5c55161cb95f5533B0e63f819Fb33bD4F3d35",
       "number_realeses": "-",
       "clif": "-",
       "claim_interval": "------",

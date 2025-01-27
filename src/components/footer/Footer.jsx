@@ -54,7 +54,7 @@ const Footer = () => {
           <img src={Division} alt='division' />
         </div>
         <div className='meow__footer_copyright'>
-          <p>©2021 Bloxifi. All rights reserved.</p>
+          <p>©2024 Slab Assets. All rights reserved.</p>
           <ul className='meow__footer_sociallist'>
             <li>
               <a href="https://www.instagram.com/slab_assets?igsh=MXF0aXIzOTUwazZmbQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
@@ -62,7 +62,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://t.me/+riHQZk6L02I4ODNh" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/slab-assets/" target="_blank" rel="noopener noreferrer">
                 <TfiWorld />
               </a>
             </li>

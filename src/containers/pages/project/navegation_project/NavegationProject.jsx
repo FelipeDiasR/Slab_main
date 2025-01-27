@@ -594,6 +594,13 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
             setPopup({ visible: false, message: '', success: true });
           };
 
+          const shortenAddress = (address = "", charsToShow = 8) => {
+            if (!address) return "";
+            const prefix = address.substring(0, charsToShow);
+            const suffix = address.substring(address.length - charsToShow);
+            return `${prefix}...${suffix}`;
+          };
+
           useEffect(() => {
             console.log("Account1:", account);
             console.log("Is Correct Network teste:", isCorrectNetwork);
@@ -742,14 +749,21 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                             </div>
                             <div className='meowl_navegation_price'>
                                 <div className='meowl_navegation_earlier_content'>
-                                    <h3>{t('navegationProject.titles.marketPrice')}</h3>
-                                    <p>{currenprice}</p>
+                                    <h3>{t('navegationProject.titles.tokenAddress')}</h3>
+                                    
+                                    <p>
+                                      {shortenAddress(token_address)}
+                                      <FaCopy onClick={copyToClipboard} style={{ cursor: 'pointer' }} />
+                                    </p>
                                 </div>
                             </div>
                             <div className='meowl_navegation_price'>
                                 <div className='meowl_navegation_earlier_content'>
-                                    <h3>{t('navegationProject.titles.historicalHigh')}</h3>
-                                    <p>{ath}</p>
+                                    <h3>{t('navegationProject.titles.blockchainLink')}</h3>
+                                    <a href={ath} target="_blank" rel="noopener noreferrer">
+                                    <p> Polygonscan</p>
+                                    </a>
+                                    
                                 </div>
                             </div>
     
