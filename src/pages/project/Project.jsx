@@ -124,6 +124,7 @@ const Project = () => {
               total_raise={project.total_raise}
               distribution={project.distribution} 
               cardId={project.id}
+              extraCaptured={project.extraCaptured}
             /> ) : (
             <div className='conditinal_paragrath'>
             <p> Carregando...</p>

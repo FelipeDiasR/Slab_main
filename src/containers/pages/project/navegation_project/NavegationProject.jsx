@@ -24,7 +24,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
     smartcontractaddress, smartcontractabi, buy_with, tge_date, fundraise_goal, token_price,
     buil_on, built_on2, stableAddress, bannerproject, total_raise, tge_Availble, token_address,
     claim_Avalible, open_buy, open_subscription, closed, rpc, explorerUrl,
-    chain_name, token_name, symbol, cardId, network, claim_section, distribution}) => {
+    chain_name, token_name, symbol, cardId, network, claim_section, distribution, extraCaptured}) => {
     
     const { account, connectWallet } = useWallet();
     const [contract, setContract] = useState(null)
@@ -81,11 +81,20 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
       alreadyCaptured: null
     });
     
-    const alreadyCapturedForm = (parseFloat((fundraising.alreadyCaptured / (10 ** 18)).toString()) || 0)
-   .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const alreadyCaptured = parseFloat((fundraising.alreadyCaptured / (10 ** 18)).toString()) || 0;
+    const extra = parseFloat(extraCaptured) || 0;
+    const totalCaptured = alreadyCaptured + extra;
+
+    const alreadyCapturedForm = totalCaptured.toLocaleString('pt-BR', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
 
     const toneladasGol = (parseFloat((fundraising.totalToRaise / (10 ** 18)).toString()) || 0)
     .toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    
+
+    
 
     const handleSectionClick = (index) => {
         console.log(index);
@@ -649,15 +658,18 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
             return;
           }
         
-          // Manter os valores como BigInt para maior precisão
-          const captured = fundraising.alreadyCaptured || 0n;
-          const total = fundraising.totalToRaise || 0n;
+          // Valores originais em wei
+          const captured = Number(fundraising.alreadyCaptured) / 10 ** 18 || 0;
+          const extra = parseFloat(extraCaptured) || 0;
+          const totalCaptured = captured + extra;
         
-          console.log('Valores convertidos:', { captured, total });
+          const total = Number(fundraising.totalToRaise) / 10 ** 18 || 0;
         
-          if (captured > 0n && total > 0n) {
-            // Cálculo da porcentagem mantendo a precisão com BigInt
-            const percentage = (Number(captured) / Number(total)) * 100;
+          console.log('Total captado com extra:', totalCaptured);
+          console.log('Meta (totalToRaise):', total);
+        
+          if (totalCaptured > 0 && total > 0) {
+            const percentage = Math.min((totalCaptured / total) * 100, 100);
             setProgressPercentage(percentage);
             console.log('Porcentagem calculada:', percentage);
           } else {
