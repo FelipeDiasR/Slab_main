@@ -1,10 +1,10 @@
-
 import React from 'react';
 
 
 //importing parts of the page
 //import { /*Article,*Fature,*/ Navbar } from '../../components';
-import { Partners, Header, Preesale, Tokenomics, Brand, Cta /*NftInfo*/ } from '../../containers';
+import { Partners, Header, Preesale, Tokenomics, Brand, Cta, TransparencePortal /*NftInfo*/ } from '../../containers';
+//import  from '../../containers/pages/home/transparence/Portal';//
 
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
       <Preesale />
       <Partners />
       <Tokenomics />
+      <TransparencePortal />
      
       
       <Cta/>

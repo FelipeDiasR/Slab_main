@@ -1,0 +1,75 @@
+.portal-transparencia-container {
+  background: #F0F2F5; 
+  border-radius: 16px;
+  padding: 32px 16px;
+  color: #1B1B1B; 
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+}
+
+.portal-transparencia-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  color: #5C9D3A; 
+}
+
+.portal-transparencia-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.portal-transparencia-table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4E9525; 
+}
+
+.portal-transparencia-table tbody tr {
+  background: #ffffff;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+.portal-transparencia-table tbody tr:nth-child(even) {
+  background: #E3F4E7; 
+}
+
+.portal-transparencia-table td {
+  padding: 12px;
+  font-size: 1.05rem;
+  vertical-align: middle;
+  color: #1B1B1B;
+}
+
+.portal-transparencia-table td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.portal-transparencia-table td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.portal-transparencia-table td:first-child,
+.portal-transparencia-table td:nth-child(3) {
+  font-weight: bold;
+}
+
+.clickable-hash {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clickable-hash:hover {
+  opacity: 0.8;
+}
+
+
