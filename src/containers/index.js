@@ -6,7 +6,8 @@ export { default as Preesale } from './pages/home/preesale/Preesale.jsx';
 export { default as Tokenomics } from './pages/home/tokenomics/Tokenomics.jsx';
 export { default as Brand } from './pages/home/brand/Brand.jsx';
 export { default as Cta } from './pages/home/cta/Cta.jsx';
-export { default as  NftInfo} from  './pages/home/nftinfo/NftInfo.jsx';
+export { default as NftInfo } from './pages/home/nftinfo/NftInfo.jsx';
+export { default as TransparencePortal } from './pages/home/transparence/TransparencePortal.jsx';
 
 
 
