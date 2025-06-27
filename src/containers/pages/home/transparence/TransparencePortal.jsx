@@ -26,11 +26,17 @@ const TransparencePortal = () => {
     return `${hash.slice(0, charsStart)}...${hash.slice(-charsEnd)}`;
   };
 
+  
+  if (burnedTokens.length === 0) {
+    return null; 
+  }
+
   return (
     <div className="portal-transparencia-container">
       <h1 className="portal-transparencia-title">
         {t('transparency.title')}
       </h1>
+
       <table className="portal-transparencia-table">
         <thead>
           <tr>
@@ -44,12 +50,11 @@ const TransparencePortal = () => {
           {burnedTokens.map((item, index) => (
             <tr key={index}>
               <td>{item.amount}</td>
-              <td>
-                {shortenHash(item.tokenAddress)} 
-              </td>
+              <td>{shortenHash(item.tokenAddress)}</td>
               <td><strong>{item.burnDate}</strong></td>
               <td>
-                <a className='clickable-hash'
+                <a
+                  className="clickable-hash"
                   href={`https://polygonscan.com/tx/${item.transactionId}`}
                   target="_blank"
                   rel="noopener noreferrer"
