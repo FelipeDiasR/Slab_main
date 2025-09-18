@@ -126,6 +126,7 @@ const Project = () => {
               distribution={project.distribution} 
               cardId={project.id}
               extraCaptured={project.extraCaptured}
+              alreadyCaptured={project.alreadyCaptured}
             /> ) : (
             <div className='conditinal_paragrath'>
             <p> Carregando...</p>

@@ -24,7 +24,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
     smartcontractaddress, smartcontractabi, buy_with, tge_date, fundraise_goal, token_price,
     buil_on, built_on2, stableAddress, bannerproject, total_raise, tge_Availble, token_address,
     claim_Avalible, open_buy, open_subscription, closed, rpc, explorerUrl,
-    chain_name, token_name, symbol, cardId, network, claim_section, distribution, extraCaptured}) => {
+    chain_name, token_name, symbol, cardId, network, claim_section, distribution, extraCaptured, alreadyCaptured}) => {
     
     const { account, connectWallet } = useWallet();
     const [contract, setContract] = useState(null)
@@ -67,6 +67,16 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
     const handleOpenPopup = (title, content) => {
         setPopupInfo({ show: true, title, content });
     };
+    const parseCurrencyBR = (value) => {
+    if (!value) return 0;
+    return parseFloat(value.replace(/\./g, '').replace(',', '.'));
+  };
+
+  const goal = parseCurrencyBR(earlier_Supply_offerd); // Ex: "1.016.820,00"
+const captured = parseCurrencyBR(alreadyCaptured);   // Ex: "154,32"
+
+const percentageFromJson = goal > 0 ? Math.min((captured / goal) * 100, 100) : 0;
+
     
     const [progressPercentage, setProgressPercentage] = useState(0);
 
@@ -81,7 +91,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
       alreadyCaptured: null
     });
     
-    const alreadyCaptured = parseFloat((fundraising.alreadyCaptured / (10 ** 18)).toString()) || 0;
+    //const alreadyCaptured = parseFloat((fundraising.alreadyCaptured / (10 ** 18)).toString()) || 0;
     const extra = parseFloat(extraCaptured) || 0;
     const totalCaptured = alreadyCaptured + extra;
 
@@ -1044,7 +1054,7 @@ const NavegationProject = ({ earlier_open_time, earlier_Supply_offerd, ticker,
                           <div className='meowl_navegation_funding_loading'>
                             <div 
                               className='progress-bar'
-                              style={{ width: `${progressPercentage}%` }}
+                              style={{ width: `${percentageFromJson.toFixed(2)}%` }}
                             />
                           </div> 
 

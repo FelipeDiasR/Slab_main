@@ -222,7 +222,7 @@
     }
   },
   "transparency": {
-    "title": "Portal da Transparência",
+    "title": "Portal de Transparência",
     "amountBurned": "Quantidade Queimada",
     "tokenAddress": "Endereço do Token",
     "burnDate": "Data da Queima",
