@@ -1,11 +1,14 @@
 .portal-transparencia-container {
   background: #F0F2F5; 
   border-radius: 16px;
-  padding: 32px 16px;
+  padding: 32px;
   color: #1B1B1B; 
   max-width: 900px;
   margin: 40px auto;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portal-transparencia-title {
@@ -20,6 +23,7 @@
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 12px;
+  margin: 0 auto;
 }
 
 .portal-transparencia-table th {
@@ -70,6 +74,118 @@
 
 .clickable-hash:hover {
   opacity: 0.8;
+}
+
+.clickable-address {
+  color: #4E9525;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.clickable-address:hover {
+  opacity: 0.8;
+  background-color: rgba(78, 149, 37, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.copy-feedback {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4E9525;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(78, 149, 37, 0.3);
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsividade para telas menores que 510px */
+@media (max-width: 510px) {
+  .portal-transparencia-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .portal-transparencia-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .portal-transparencia-table th {
+    font-size: 0.9rem;
+    padding: 8px 6px;
+  }
+
+  .portal-transparencia-table td {
+    font-size: 0.85rem;
+    padding: 8px 6px;
+  }
+
+  .clickable-address,
+  .clickable-hash {
+    font-size: 0.8rem;
+  }
+
+  .copy-feedback {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Responsividade específica para 320px */
+@media (max-width: 320px) {
+  .portal-transparencia-container {
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .portal-transparencia-title {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+
+  .portal-transparencia-table th {
+    font-size: 0.75rem;
+    padding: 6px 4px;
+  }
+
+  .portal-transparencia-table td {
+    font-size: 0.7rem;
+    padding: 6px 4px;
+  }
+
+  .clickable-address,
+  .clickable-hash {
+    font-size: 0.65rem;
+  }
+
+  .copy-feedback {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
 }
 
 
